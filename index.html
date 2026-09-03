@@ -478,6 +478,16 @@
     .reveal{opacity:1;transform:none;transition:none}
     .hero__slide{transition:none}
   }
+  .imgwrap.tbd{display:flex;align-items:center;justify-content:center;background:#f3ece9;min-height:190px}
+  .imgwrap.tbd span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9b8a85;font-weight:700;text-align:center;padding:0 12px}
+  .grouplabel{margin:56px 0 10px}
+  .draftnote{margin-top:24px;padding:14px 16px;border:1px dashed #c9a9b4;border-radius:10px;font-size:13px;line-height:1.7;color:#7a6b6d}
+  .draftnote b{color:#b3466f}
+  .msggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:26px}
+  .msgcard{background:#fff;border:1px solid #efdce0;border-radius:16px;padding:18px 18px 20px}
+  .msgcard .n{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b3466f;font-weight:700}
+  .msgcard h4{margin:8px 0 6px;font-size:19px;line-height:1.15}
+  .msgcard p{font-size:13.5px;line-height:1.6;color:#6d5f61;margin:0}
 </style>
 </head>
 <body>
@@ -677,7 +687,7 @@
           <div class="time">12:00–1:00pm</div>
           <div>
             <div class="what serif">Brunch with the panel</div>
-            <div class="who">A sharing session with <b>Dr Jila</b>, <b>Dr Tara</b> and <b>Ericka Hart</b> — 30-minute talk, 10 minutes of Q&amp;A, plus a live product demo. Ask them anything.</div>
+            <div class="who">A sharing session with <b>Dr Jila</b> and <b>Dr Tara</b> — 30-minute talk, 10 minutes of Q&amp;A, plus a live product demo. Ask them anything.</div>
           </div>
           <div class="tagn">Sharing session</div>
         </div>
@@ -839,6 +849,30 @@
   </div>
 </section>
 
+<section class="products" id="direction">
+  <div class="wrap">
+    <div class="prodhead">
+      <div class="reveal">
+        <span class="kicker eyebrow">Content direction</span>
+        <h2 class="big serif">What we want people to <em>walk away with.</em></h2>
+      </div>
+      <p class="lead reveal">Four messages. If a post lands one of them, it is doing its job.</p>
+    </div>
+    <div class="msggrid reveal">
+      <div class="msgcard"><div class="n">Message 01</div><h4 class="serif">Pleasure is wellness.</h4>
+        <p>Not a guilty extra. Treat it the way you would sleep, food or movement.</p></div>
+      <div class="msgcard"><div class="n">Message 02</div><h4 class="serif">Cute enough to leave out.</h4>
+        <p>Design you would happily have on the nightstand. Nothing to hide in a drawer.</p></div>
+      <div class="msgcard"><div class="n">Message 03</div><h4 class="serif">Experts stand next to us.</h4>
+        <p>Doctors and educators put their names to this. Credible, never clinical.</p></div>
+      <div class="msgcard"><div class="n">Message 04</div><h4 class="serif">Say it out loud.</h4>
+        <p>Break the taboo by being unembarrassed. Warm and funny beats shock value.</p></div>
+    </div>
+    <div class="draftnote reveal"><b>Draft copy</b> &mdash; written from the brand voice already on this site.
+      Swap for the approved wording before this goes to creators.</div>
+  </div>
+</section>
+
 <!-- STATS / THE PHENOMENON -->
 <section class="stats" id="stats">
   <div class="wrap">
@@ -887,6 +921,20 @@
           <div class="desc">Turbocharged clit suction — deep, powerful, unmatched sensation.</div>
         </div>
       </a>
+      <div class="card reveal">
+        <div class="imgwrap tbd"><span>Ace &mdash; photo to come</span></div>
+        <div class="body">
+          <div class="name serif">Ace</div>
+          <div class="desc">Air-suction massager from the Center Court collection. Product shot and shop link to come.</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap tbd"><span>Smash &mdash; photo to come</span></div>
+        <div class="body">
+          <div class="name serif">Smash</div>
+          <div class="desc">The wand, with a tennis-ball head. Product shot and shop link to come.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -958,6 +1006,13 @@
         <div class="rl">Nancy Partnership Team · your on-site contact</div>
         <div class="hd"><a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a></div>
       </div>
+    </div>
+
+    <div class="grouplabel reveal">
+      <span class="kicker eyebrow">On the panel</span>
+      <h3 class="serif">Experts joining us.</h3>
+    </div>
+    <div class="ppl-grid">
       <a class="person reveal" href="https://www.instagram.com/drjilasenemar" target="_blank" rel="noopener">
         <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/dr-jila.jpg" alt="Dr Jila Senemar" onerror="this.parentNode.classList.add('ph--tbd');this.parentNode.innerHTML='<span class=\'initials serif\'>DJ</span>'"></div>
         <div class="nm serif">Dr Jila</div>
@@ -970,24 +1025,9 @@
         <div class="rl">Sex &amp; relationship expert · @luvbites.co founder</div>
         <div class="hd">@luvbites.co</div>
       </a>
-      <a class="person reveal" href="https://www.instagram.com/ihartericka" target="_blank" rel="noopener">
-        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/ericka-hart.jpg" alt="Ericka Hart" onerror="this.parentNode.classList.add('ph--tbd');this.parentNode.innerHTML='<span class=\'initials serif\'>EH</span>'"></div>
-        <div class="nm serif">Ericka Hart</div>
-        <div class="rl">Sexuality educator, M.Ed. · Writer, speaker &amp; model</div>
-        <div class="hd">@ihartericka</div>
-      </a>
+      
     </div>
 
-    <div class="sponsors-head reveal">
-      <span class="kicker eyebrow">Sponsors</span>
-      <h3 class="serif sponsors-title">Good company, <em>coming soon.</em></h3>
-      <p class="sponsors-sub">We're finalising the brands joining us in Playa del Carmen. We'll add them here — and we'll ask you to tag them too.</p>
-    </div>
-    <div class="sponsor-slots reveal">
-      <div class="slot">To be announced</div>
-      <div class="slot">To be announced</div>
-      <div class="slot">To be announced</div>
-    </div>
   </div>
 </section>
 
