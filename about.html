@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Nancy — Break taboo. Embrace pleasure.</title>
+<meta name="description" content="One lemon. A million women. 250 million views. How Hello Nancy went from zero to the fastest-growing name in sexual wellness in under two years." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#ec2f8e;
+    --pink-deep:#b8125f;
+    --pink-soft:#ffd9ec;
+    --yellow:#ffd42e;
+    --yellow-soft:#ffe873;
+    --cream:#faf3e6;
+    --cream-2:#f4e9d6;
+    --ink:#1f1216;
+    --ink-soft:#5e4b52;
+    --line:rgba(31,18,22,.14);
+    /* stops at warm orange, not full yellow, so white type stays legible on it */
+    --grad:linear-gradient(100deg,var(--pink) 0%,#f7457e 45%,#ff8a3d 100%);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+  .serif{font-family:"Fraunces",Georgia,serif}
+  .kicker{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  section{padding:clamp(58px,7.5vw,116px) 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--pink);margin-bottom:clamp(20px,2.6vw,34px)}
+  .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;display:inline-block}
+  h2.big{font-family:"Fraunces",serif;font-optical-sizing:auto;font-weight:360;letter-spacing:-.02em;line-height:1;font-size:clamp(36px,6.2vw,82px)}
+  h2.big em{font-style:italic;color:var(--pink)}
+  .lead{font-family:"Fraunces",serif;font-weight:340;font-size:clamp(19px,2.2vw,28px);line-height:1.35;letter-spacing:-.01em;max-width:34ch;margin-top:20px}
+  .body{font-size:clamp(15px,1.3vw,17px);line-height:1.62;color:var(--ink-soft);max-width:56ch;margin-top:20px}
+
+  /* HERO */
+  .ahero{background:var(--grad);color:#fff;padding:0;min-height:78svh;display:flex;flex-direction:column}
+  .ahero__top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:clamp(22px,3.4vw,38px)}
+  .wordmark-img{width:clamp(112px,14vw,178px);height:auto;filter:brightness(0) invert(1)}
+  .navlink{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    text-decoration:none;color:var(--ink);background:#fff;padding:9px 15px;border-radius:100px;
+    white-space:nowrap;font-weight:500;transition:transform .2s ease;
+  }
+  .navlink:hover{transform:translateY(-2px)}
+  .ahero__center{flex:1;display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,7vw,80px) 0}
+  .ahero h1{font-family:"Fraunces",serif;font-weight:340;line-height:.95;letter-spacing:-.02em;font-size:clamp(46px,9.4vw,124px);color:#fff}
+  .ahero h1 em{font-style:italic;color:var(--yellow)}
+  .ahero__sub{margin-top:clamp(20px,2.6vw,30px);font-size:clamp(16px,1.7vw,21px);line-height:1.45;max-width:44ch;color:rgba(255,255,255,.95)}
+  .ahero__meta{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.4vw,30px);border-top:1px solid rgba(255,255,255,.35);padding:clamp(16px,2vw,22px) 0 clamp(26px,3.4vw,40px)}
+  .ahero__meta div{min-width:0;padding-right:8px}
+  .ahero__meta .big{font-family:"Fraunces",serif;font-size:clamp(26px,3.4vw,44px);font-weight:420;color:#fff;line-height:1}
+  .ahero__meta .sm{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-top:8px}
+
+  /* PHENOMENON */
+  .phen{background:var(--cream)}
+  .phengrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,4.6vw,70px);align-items:center}
+  .statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,22px);margin-top:clamp(28px,3.4vw,40px)}
+  .statbox{background:#fff;border-radius:12px;padding:clamp(18px,2.2vw,28px);border:1px solid var(--line)}
+  .statbox .n{font-family:"Fraunces",serif;font-size:clamp(30px,3.8vw,48px);font-weight:440;line-height:1;color:var(--pink)}
+  .statbox .l{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+  .shot{border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(184,18,95,.45)}
+
+  .phencol{display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)}
+  .lemshot{width:100%;max-width:420px;margin:0 auto;height:auto}
+  .seenon{border-top:1px solid var(--line);padding-top:22px}
+  .seenon__lab{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+  /* each source file is a strip of several logos, so normalise on height, not cell width */
+  .logowall{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:18px}
+  .logowall img{height:26px;width:auto;opacity:.78}
+  .casegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .casegrid img{
+    width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;
+    transition:transform .4s ease;
+  }
+  .casegrid img:hover{transform:scale(1.03)}
+
+  /* WHY */
+  .why{background:var(--pink-soft)}
+  .why .eyebrow{color:var(--pink-deep)}
+  .whygrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4.6vw,70px);align-items:center}
+  .bignums{margin-top:clamp(28px,3.4vw,40px)}
+  .bignum{display:flex;align-items:baseline;gap:18px;padding:16px 0;border-bottom:1px solid rgba(31,18,22,.16)}
+  .bignum .n{font-family:"Fraunces",serif;font-size:clamp(38px,4.6vw,60px);font-weight:440;color:var(--pink-deep);line-height:1;min-width:2.6em}
+  .bignum .l{font-size:15px;line-height:1.45;font-weight:500}
+  .whyline{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(22px,2.6vw,32px);color:var(--pink-deep);margin-top:26px}
+
+  /* RANGE */
+  .range{background:var(--cream)}
+  .rangegrid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.4vw,18px);margin-top:clamp(34px,4.2vw,54px)}
+  .pcard{background:var(--cream-2);border-radius:10px;overflow:hidden}
+  .pcard .imgwrap{aspect-ratio:1/1;overflow:hidden}
+  .pcard img{width:100%;height:100%;object-fit:cover}
+  .pcard .b{padding:14px 14px 18px}
+  .pcard .nm{font-family:"Fraunces",serif;font-size:19px;font-weight:420;color:var(--pink-deep)}
+  .pcard .ds{font-size:12.5px;line-height:1.45;color:var(--ink-soft);margin-top:5px}
+  .specs{margin-top:clamp(26px,3vw,36px);display:flex;flex-wrap:wrap;gap:10px}
+  .specs span{font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:8px 14px;border-radius:100px;color:var(--ink-soft)}
+
+  /* HERO PRODUCT */
+  .heroprod{background:var(--ink);color:var(--cream)}
+  .heroprod .eyebrow{color:var(--yellow)}
+  .heroprod h2.big{color:var(--cream)}
+  .heroprod h2.big em{color:var(--yellow)}
+  .hpgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4.6vw,70px);align-items:center}
+  .ticks{margin-top:clamp(26px,3vw,36px);list-style:none}
+  .ticks li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(250,243,230,.16);font-size:15.5px;line-height:1.5}
+  .ticks li::before{content:"";width:11px;height:11px;border-radius:100px;background:var(--yellow);flex:0 0 auto;margin-top:7px}
+
+  /* EXPERTS */
+  .experts{background:var(--cream-2)}
+  .expgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.2vw,26px);margin-top:clamp(34px,4.2vw,54px)}
+  .exp{background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(18px,2vw,24px)}
+  .exp .nm{font-family:"Fraunces",serif;font-size:19px;font-weight:440;line-height:1.15}
+  .exp .rl{font-size:12.5px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
+  .exp .q{font-size:13.5px;line-height:1.55;margin-top:14px;font-style:italic;color:var(--ink)}
+  .exp .hd{font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--pink);margin-top:14px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+  .exp .fw{background:#d9f000;color:var(--ink);border-radius:100px;padding:3px 10px;font-weight:700;font-size:10.5px;letter-spacing:.06em;white-space:nowrap}
+
+  /* TRACK RECORD */
+  .track{background:var(--cream)}
+  .caselist{margin-top:clamp(34px,4.2vw,54px);display:grid;gap:clamp(30px,4vw,60px)}
+  .case{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(22px,3.2vw,48px);align-items:center}
+  .case:nth-child(even) .casetxt{order:2}
+  .case .tagline{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--ink);display:inline-block;padding:7px 13px;border-radius:100px}
+  .case h3{font-family:"Fraunces",serif;font-size:clamp(24px,2.8vw,36px);font-weight:400;line-height:1.1;margin-top:16px}
+  .case p{font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-top:12px;max-width:44ch}
+  .case .shot{border-radius:12px}
+
+  /* CTA */
+  .cta{background:var(--grad);color:#fff;text-align:center}
+  .cta h2{font-family:"Fraunces",serif;font-weight:360;font-size:clamp(34px,5.6vw,74px);line-height:1.02;letter-spacing:-.02em;max-width:16ch;margin:0 auto}
+  .cta .sub{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(18px,2.2vw,27px);margin-top:clamp(22px,2.6vw,32px);color:var(--yellow)}
+  .ctabtns{margin-top:clamp(32px,4vw,48px);display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .btn{
+    font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    text-decoration:none;padding:15px 26px;border-radius:100px;font-weight:500;transition:transform .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn--solid{background:#fff;color:var(--ink)}
+  .btn--ghost{border:1px solid rgba(255,255,255,.6);color:#fff}
+
+  footer{background:var(--ink);color:var(--cream);padding:clamp(52px,7vw,96px) 0 clamp(36px,4vw,56px)}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px}
+  .foot-word-img{width:clamp(170px,30vw,390px);height:auto;filter:brightness(0) invert(1)}
+  .foot-r{text-align:right;font-family:"JetBrains Mono",monospace;font-size:13px;letter-spacing:.08em;line-height:2}
+  .foot-r a{color:var(--yellow);text-decoration:none}
+  .foot-tag{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(19px,2.3vw,29px);color:var(--yellow-soft);margin-top:clamp(30px,4vw,50px)}
+  .foot-bot{margin-top:clamp(36px,4.4vw,56px);padding-top:24px;border-top:1px solid rgba(250,243,230,.18);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,243,230,.55)}
+
+  @media(max-width:900px){
+    .phengrid,.whygrid,.hpgrid,.case{grid-template-columns:1fr}
+    .case:nth-child(even) .casetxt{order:0}
+    .rangegrid{grid-template-columns:repeat(3,1fr)}
+    .expgrid{grid-template-columns:repeat(2,1fr)}
+    .foot-r{text-align:left}
+  }
+  @media(max-width:560px){
+    .rangegrid{grid-template-columns:repeat(2,1fr)}
+    .expgrid{grid-template-columns:1fr}
+    .statgrid{grid-template-columns:1fr}
+    .ahero__meta{grid-template-columns:repeat(2,1fr)}
+  }
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header class="ahero">
+  <div class="wrap" style="display:flex;flex-direction:column;flex:1">
+    <div class="ahero__top">
+      <img class="wordmark-img" src="assets/brand/logo-nancy.png" alt="Nancy">
+      <a class="navlink" href="index.html">← Back to the trip</a>
+    </div>
+    <div class="ahero__center">
+      <p class="kicker" style="opacity:.9;margin-bottom:22px">About Nancy</p>
+      <h1 class="serif">One lemon.<br>A million women.<br><em>250 million views.</em></h1>
+      <p class="ahero__sub">In under two years, Hello Nancy went from zero to the fastest-growing name in sexual wellness. We turned a taboo into a movement.</p>
+    </div>
+    <div class="ahero__meta">
+      <div><div class="big">1M+</div><div class="sm">Units sold</div></div>
+      <div><div class="big">150M+</div><div class="sm">Creator views</div></div>
+      <div><div class="big">4.7★</div><div class="sm">20,000+ reviews</div></div>
+      <div><div class="big">#1</div><div class="sm">TikTok's most popular toy</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- PHENOMENON -->
+<section class="phen">
+  <div class="wrap">
+    <div class="phengrid">
+      <div class="reveal">
+        <span class="kicker eyebrow">The phenomenon</span>
+        <h2 class="big serif">We turned a taboo into a <em>movement.</em></h2>
+        <p class="body">Women were underserved and told pleasure was shameful. Hello Nancy made it fun, safe and shame-free — so women actually talk about it. That's why it spread, and why it kept spreading without us buying a single view.</p>
+        <div class="statgrid">
+          <div class="statbox"><div class="n">1M+</div><div class="l">Units sold</div></div>
+          <div class="statbox"><div class="n">150M+</div><div class="l">Creator views</div></div>
+          <div class="statbox"><div class="n">4.7★</div><div class="l">20,000+ reviews</div></div>
+          <div class="statbox"><div class="n">#1</div><div class="l">TikTok's most popular toy</div></div>
+        </div>
+      </div>
+      <div class="reveal phencol">
+        <img class="lemshot" src="assets/gallery/phen/00.png" alt="Lem, the lemon-shaped air-suction massager" loading="lazy">
+        <div class="seenon">
+          <span class="seenon__lab">As seen on</span>
+          <div class="logowall">
+            <img src="assets/gallery/logos/00.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/01.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/03.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/04.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/05.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/06.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/07.png" alt="" loading="lazy">
+            <img src="assets/gallery/logos/08.png" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap">
+    <div class="whygrid">
+      <div class="reveal">
+        <span class="kicker eyebrow">The why</span>
+        <h2 class="big serif">Sexual wellbeing <em>is health.</em></h2>
+        <div class="bignums">
+          <div class="bignum"><div class="n serif">40%</div><div class="l">of women don't know where to begin</div></div>
+          <div class="bignum"><div class="n serif">98%</div><div class="l">want a better experience</div></div>
+        </div>
+        <p class="whyline serif">Making the quietest conversation organic, fun, safe and shame-free.</p>
+      </div>
+      <div class="reveal">
+        <img class="shot" src="assets/gallery/why/00.jpg" alt="Nancy x Nick Kyrgios at the London pop-up" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RANGE -->
+<section class="range">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker eyebrow">The range</span>
+      <h2 class="big serif">Toys so cute, they live on the <em>nightstand.</em></h2>
+      <p class="body">Designed to look like fruit, not a sex toy — the reason people screenshot them and share them.</p>
+    </div>
+    <div class="rangegrid reveal">
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/lem.jpg" alt="Lem" loading="lazy"></div><div class="b"><div class="nm serif">Lem</div><div class="ds">Air-suction. 12 intensities.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/berri.jpg" alt="Berri" loading="lazy"></div><div class="b"><div class="nm serif">Berri</div><div class="ds">Tapping clitoral massager.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/avo.jpg" alt="Avo" loading="lazy"></div><div class="b"><div class="nm serif">Avo</div><div class="ds">Turbocharged suction.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/lolly.jpg" alt="Lolly" loading="lazy"></div><div class="b"><div class="nm serif">Lolly</div><div class="ds">Mini wand, travel-ready.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/pixie.jpg" alt="Pixie" loading="lazy"></div><div class="b"><div class="nm serif">Pixie</div><div class="ds">Remote-control panty vibe.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/justuno.jpg" alt="Just Uno" loading="lazy"></div><div class="b"><div class="nm serif">Just Uno</div><div class="ds">One-button, beginner-first.</div></div></div>
+    </div>
+    <div class="specs reveal">
+      <span>Medical-grade silicone</span>
+      <span>Waterproof</span>
+      <span>Whisper-quiet</span>
+      <span>Discreet, fruit-shaped design</span>
+    </div>
+  </div>
+</section>
+
+<!-- HERO PRODUCT -->
+<section class="heroprod">
+  <div class="wrap">
+    <div class="hpgrid">
+      <div class="reveal">
+        <span class="kicker eyebrow">Hero product</span>
+        <h2 class="big serif">1,000,000 Lems sold, and it still <em>sells out.</em></h2>
+        <ul class="ticks">
+          <li>Replaced the Rose as 2023's viral toy</li>
+          <li>Lemon-shaped — looks like a desk toy</li>
+          <li>12 unique air-suction intensities</li>
+          <li>Medical-grade silicone, waterproof, 120-min play</li>
+          <li>Doctor-recommended</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <img class="shot" src="assets/gallery/lem/00.jpg" alt="Nancy creators with Lem" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTS -->
+<section class="experts">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker eyebrow">Expert-backed</span>
+      <h2 class="big serif">Experts put their name <em>next to ours.</em></h2>
+    </div>
+    <div class="expgrid">
+      <div class="exp reveal">
+        <div class="nm serif">Dr Tara Suwinyattichaiporn</div>
+        <div class="rl">Sex &amp; Relationship Expert</div>
+        <div class="q">"I'm all about high-quality products with good design, so of course I have Lem in my go-to drawer!"</div>
+        <div class="hd"><span>@luvbites.co</span><span class="fw">247k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Georgie Culley</div>
+        <div class="rl">The Sun's Resident Sexpert, award-winning journalist</div>
+        <div class="q">"It's also super quiet, and you can get multiple orgasms in one session from this little guy."</div>
+        <div class="hd"><span>@sunsexpert</span><span class="fw">110k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Lucil Ampe</div>
+        <div class="rl">Intimacy Coach &amp; Author</div>
+        <div class="q">"From delivery of the package to my O with the Lemon, it's clear Hello Nancy created something thoughtful, playful, and shame-free."</div>
+        <div class="hd"><span>@lucilampe</span><span class="fw">109k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Danielle Bezalel</div>
+        <div class="rl">Creator, producer and host of Sex Ed with DB Podcast</div>
+        <div class="q">A recommending expert and advisor for Hello Nancy products.</div>
+        <div class="hd"><span>@sexedwithdbpodcast</span><span class="fw">33.6k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Annette Benedetti</div>
+        <div class="rl">Sex and Intimacy Coach</div>
+        <div class="q">"She understood the assignment."</div>
+        <div class="hd"><span>@annettebenedetti</span><span class="fw">18.8k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Sara Tang</div>
+        <div class="rl">Certified Sexologist &amp; Coach</div>
+        <div class="q">"Nancy's mission resonates deeply with me, as we share a common goal of bringing comprehensive sexual wellness education to Asia and beyond."</div>
+        <div class="hd"><span>@hellosarasense</span><span class="fw">15.5k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Dr Tessa Fox-Kulakowski</div>
+        <div class="rl">Licensed Clinical Social Worker, PhD in Human Sexuality Studies</div>
+        <div class="q">"Love, love, love in fruit form!"</div>
+        <div class="hd"><span>@thesmuttytherapist</span><span class="fw">4,248</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Karen Bigman</div>
+        <div class="rl">Certified Sexuality Educator &amp; Menopause Coach</div>
+        <div class="q">"I love Lem because it's not a jackhammer shaking up the whole bed, and it's so easy and lightweight that nobody even has to know it's there if you don't want them to."</div>
+        <div class="hd"><span>@taboototruth</span><span class="fw">3.14k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Maaike Steinebach</div>
+        <div class="rl">Founder &amp; CEO, FemTech Future Limited</div>
+        <div class="q">A member of the "Nancy Collective", who joined the team to pursue her passion for female sexual health.</div>
+        <div class="hd"><span>@maaikeloveshk</span><span class="fw">2,503</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Dr Angela Wright</div>
+        <div class="rl">GP, Clinical Sexologist</div>
+        <div class="q">"As a doctor who focuses on sexual health, I frequently recommend the Lem as a high quality, beginner friendly suction toy."</div>
+        <div class="hd"><span>@spicedpeardrwright</span><span class="fw">2.07k</span></div>
+      </div>
+      <div class="exp reveal">
+        <div class="nm serif">Hayley Hoffman</div>
+        <div class="rl">Certified Imago Relationship Therapist, LPC</div>
+        <div class="q">"The products are highly curated to bring the best of good sensation to couples for shared play or individual pleasure."</div>
+        <div class="hd"><span>@youareamazing.us</span><span class="fw">620</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section class="track">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker eyebrow">Track record</span>
+      <h2 class="big serif">We don't buy attention. <em>We create it.</em></h2>
+    </div>
+    <div class="caselist">
+      <div class="case reveal">
+        <div class="casetxt">
+          <span class="tagline">Miami Swim Week</span>
+          <h3 class="serif">The Wet Cabana</h3>
+          <p>At Miami Swim Week we built The Wet Cabana — neon swim, a packed party, and content that travelled far past the guest list.</p>
+        </div>
+        <div class="casegrid"><img src="assets/gallery/miami/00.jpg" alt="Nancy at Miami Swim Week" loading="lazy"><img src="assets/gallery/miami/01.jpg" alt="Nancy at Miami Swim Week" loading="lazy"><img src="assets/gallery/miami/02.jpg" alt="Nancy at Miami Swim Week" loading="lazy"><img src="assets/gallery/miami/03.jpg" alt="Nancy at Miami Swim Week" loading="lazy"><img src="assets/gallery/miami/04.jpg" alt="Nancy at Miami Swim Week" loading="lazy"><img src="assets/gallery/miami/05.jpg" alt="Nancy at Miami Swim Week" loading="lazy"></div>
+      </div>
+      <div class="case reveal">
+        <div class="casetxt">
+          <span class="tagline">Nancy × Nick Kyrgios · London</span>
+          <h3 class="serif">The loudest pop-up in London</h3>
+          <p>A few days before Wimbledon we threw the loudest pop-up in London with Nick Kyrgios. It broke the internet — 1.5M views on a single post, plus Daily Mail and TYO coverage.</p>
+        </div>
+        <div class="casegrid"><img src="assets/gallery/kyrgios/00.jpg" alt="Nancy x Nick Kyrgios pop-up" loading="lazy"><img src="assets/gallery/kyrgios/01.jpg" alt="Nancy x Nick Kyrgios pop-up" loading="lazy"><img src="assets/gallery/kyrgios/02.jpg" alt="Nancy x Nick Kyrgios pop-up" loading="lazy"><img src="assets/gallery/kyrgios/03.jpg" alt="Nancy x Nick Kyrgios pop-up" loading="lazy"><img src="assets/gallery/kyrgios/04.jpg" alt="Nancy x Nick Kyrgios pop-up" loading="lazy"><img src="assets/gallery/kyrgios/05.jpg" alt="Nancy x Nick Kyrgios pop-up" loading="lazy"></div>
+      </div>
+      <div class="case reveal">
+        <div class="casetxt">
+          <span class="tagline">Nancy × Lottie Moss · London</span>
+          <h3 class="serif">Dinner for women's pleasure</h3>
+          <p>An intimate dinner with Lottie Moss and Dr Tara — making the quietest conversation organic, fun, safe and shame-free.</p>
+        </div>
+        <div class="casegrid"><img src="assets/gallery/lottie/00.jpg" alt="Nancy x Lottie Moss dinner" loading="lazy"><img src="assets/gallery/lottie/01.jpg" alt="Nancy x Lottie Moss dinner" loading="lazy"><img src="assets/gallery/lottie/02.jpg" alt="Nancy x Lottie Moss dinner" loading="lazy"><img src="assets/gallery/lottie/03.jpg" alt="Nancy x Lottie Moss dinner" loading="lazy"><img src="assets/gallery/lottie/04.jpg" alt="Nancy x Lottie Moss dinner" loading="lazy"><img src="assets/gallery/lottie/05.jpg" alt="Nancy x Lottie Moss dinner" loading="lazy"></div>
+      </div>
+      <div class="case reveal">
+        <div class="casetxt">
+          <span class="tagline">Nancy pop-up · 360 activation</span>
+          <h3 class="serif">Always a party, celebrating pleasure</h3>
+          <p>A-list hosts, expert voices, games and giveaways, naughty bites and sips, and live demos from Team Nancy. Anyone — any brand, any venue — that stands for sex positivity is welcome.</p>
+        </div>
+        <div class="casegrid"><img src="assets/gallery/activation/00.jpg" alt="Nancy pop-up activation" loading="lazy"><img src="assets/gallery/activation/01.jpg" alt="Nancy pop-up activation" loading="lazy"><img src="assets/gallery/activation/02.jpg" alt="Nancy pop-up activation" loading="lazy"><img src="assets/gallery/activation/03.jpg" alt="Nancy pop-up activation" loading="lazy"><img src="assets/gallery/activation/04.jpg" alt="Nancy pop-up activation" loading="lazy"><img src="assets/gallery/activation/05.jpg" alt="Nancy pop-up activation" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2 class="serif">Break taboo. Embrace pleasure.</h2>
+    <p class="sub serif">And in September — go out of office.</p>
+    <div class="ctabtns">
+      <a class="btn btn--solid" href="index.html">← Back to the trip</a>
+      <a class="btn btn--ghost" href="https://www.hellonancy.com" target="_blank" rel="noopener">hellonancy.com ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <img loading="lazy" class="foot-word-img" src="assets/brand/logo-nancy.png" alt="Nancy">
+      <div class="foot-r">
+        <a href="index.html">Nancy OOO · Playa del Carmen</a><br>
+        <a href="https://www.hellonancy.com" target="_blank" rel="noopener">www.hellonancy.com</a><br>
+        <a href="https://instagram.com/hellonancy_official" target="_blank" rel="noopener">@hellonancy_official</a><br>
+        <a href="mailto:crystal@hellonancy.com">crystal@hellonancy.com</a>
+      </div>
+    </div>
+    <div class="foot-tag serif">Break taboo. Embrace pleasure.</div>
+    <div class="foot-bot">
+      <span>#NancyOOO · #OutOfOffice · #PleasureIsWellness</span>
+      <span>© Nancy</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

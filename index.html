@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>You're invited. And excused. — Nancy Out of Office, Playa del Carmen</title>
+<meta name="description" content="Everything you need for Nancy Out of Office — our creators trip to Playa del Carmen, 9–12 September 2026. The agenda, how to tag & share, and the humans making it happen." />
+<meta property="og:title" content="You're invited. And excused. — Nancy Out of Office" />
+<meta property="og:description" content="Nancy OOO · Playacar Vista Estate, Playa del Carmen · 9–12 September 2026" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero/h1.jpg">
+<style>
+  :root{
+    --pink:#ec2f8e;
+    --pink-2:#ff5fae;
+    --pink-deep:#b8125f;
+    --pink-soft:#ffd9ec;
+    --yellow:#ffd42e;
+    --yellow-soft:#ffe873;
+    --cream:#faf3e6;
+    --cream-2:#f4e9d6;
+    --ink:#1f1216;
+    --ink-soft:#5e4b52;
+    --line:rgba(31,18,22,.14);
+    /* stops at warm orange, not full yellow, so white type stays legible on it */
+    --grad:linear-gradient(100deg,var(--pink) 0%,#f7457e 45%,#ff8a3d 100%);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Inter",system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+  .serif{font-family:"Fraunces",Georgia,serif}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+  .kicker{
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    font-weight:500;
+  }
+  a{color:inherit}
+  img{display:block;max-width:100%}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100svh;
+    display:flex;flex-direction:column;justify-content:space-between;
+    color:#fff;overflow:hidden;
+    background:#c9186f;
+  }
+  .hero__slides{position:absolute;inset:0}
+  .hero__slide{
+    position:absolute;inset:0;
+    background-size:cover;background-position:center 45%;background-repeat:no-repeat;
+    opacity:0;transition:opacity 1.6s ease;
+    transform:scale(1.06);will-change:transform,opacity;
+  }
+  .hero__slide.on{opacity:1;animation:kenburns 8s ease-out forwards}
+
+  @keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1.15)}}
+  @media(prefers-reduced-motion:reduce){
+    .hero__slide.on{animation:none}
+  }
+  .hero__tint{
+    position:absolute;inset:0;
+    /* flat 20% black — neutral, no colour cast. the extra fade is pure black too,
+       just enough to hold the small type at the bottom over bright pool shots. */
+    background:rgba(0,0,0,.2);   /* flat 20% black, no colour cast */
+  }
+  .hero__inner{position:relative;z-index:2;width:100%}
+  .hero__top{
+    display:flex;justify-content:center;align-items:center;
+    padding-top:clamp(26px,4vw,46px);
+  }
+  .wordmark-img{width:clamp(132px,17vw,215px);height:auto;filter:drop-shadow(0 2px 14px rgba(0,0,0,.5))}
+  .hero__center{
+    flex:1;display:flex;flex-direction:column;justify-content:center;
+    padding:clamp(24px,6vw,40px) 0;
+  }
+  .hero h1{
+    font-family:"Fraunces",serif;font-optical-sizing:auto;
+    font-weight:340;line-height:.9;letter-spacing:-.02em;
+    font-size:clamp(58px,13vw,168px);
+    text-shadow:0 2px 30px rgba(0,0,0,.55), 0 1px 4px rgba(0,0,0,.35);
+  }
+  .hero h1 .l1{color:var(--yellow);display:block}
+  .hero h1 .l2{color:var(--pink-2);display:block;font-style:italic;font-weight:340}
+  .hero__sub{
+    margin-top:clamp(18px,2.4vw,28px);
+    font-family:"JetBrains Mono",monospace;
+    font-size:clamp(13px,1.5vw,16px);letter-spacing:.18em;text-transform:uppercase;
+    color:#fff;font-weight:500;line-height:1.9;text-shadow:0 1px 4px rgba(0,0,0,.9), 0 0 20px rgba(0,0,0,.55);
+  }
+  .hero__meta{
+    position:relative;z-index:2;
+    display:flex;flex-wrap:wrap;gap:clamp(26px,6vw,84px);
+    border-top:1px solid rgba(255,255,255,.45);
+    padding:clamp(16px,2vw,22px) 0 clamp(26px,3.4vw,40px);
+  }
+  .hero__meta div{min-width:0}
+  .hero__meta .big{
+    font-family:"Fraunces",serif;font-size:clamp(22px,2.6vw,32px);font-weight:400;
+    color:var(--yellow-soft);line-height:1.08;
+    text-shadow:0 1px 4px rgba(0,0,0,.85), 0 0 18px rgba(0,0,0,.5);
+  }
+  .hero__meta .sm{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.13em;
+    text-transform:uppercase;color:#fff;margin-top:8px;
+    text-shadow:0 1px 4px rgba(0,0,0,.9), 0 0 16px rgba(0,0,0,.55);
+  }
+  .hero__dots{
+    position:absolute;right:clamp(20px,5vw,64px);bottom:clamp(26px,3.4vw,40px);
+    z-index:3;display:flex;gap:8px;
+  }
+  .hero__dots button{
+    width:7px;height:7px;border-radius:100px;border:0;padding:0;cursor:pointer;
+    background:rgba(255,255,255,.4);transition:background .3s ease,width .3s ease;
+  }
+  .hero__dots button[aria-current="true"]{background:var(--yellow);width:22px}
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:clamp(64px,9vw,140px) 0}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    color:var(--pink);margin-bottom:clamp(24px,3vw,40px);
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;display:inline-block}
+  h2.big{
+    font-family:"Fraunces",serif;font-optical-sizing:auto;
+    font-weight:360;letter-spacing:-.02em;line-height:1;
+    font-size:clamp(40px,7vw,92px);
+  }
+  h2.big em{font-style:italic;color:var(--pink)}
+  .lead{
+    font-family:"Fraunces",serif;font-weight:340;
+    font-size:clamp(20px,2.4vw,30px);line-height:1.35;letter-spacing:-.01em;
+    color:var(--ink);max-width:24ch;
+  }
+
+  /* ---------- WELCOME ---------- */
+  .welcome{background:var(--cream);border-bottom:1px solid var(--line)}
+  .welcome .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,5vw,72px);align-items:center}
+  .welcome p.body{font-size:clamp(15px,1.3vw,18px);color:var(--ink-soft);max-width:46ch;margin-top:22px}
+  /* the render is 16:9 — pin an aspect so it fills the column instead of floating in it */
+  .welcome .imgcol img{
+    width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center;
+    border-radius:10px;filter:saturate(1.05);
+  }
+
+ /* ---------- THE VILLA ---------- */
+  .villa{background:var(--cream-2);border-bottom:1px solid var(--line)}
+  .villa .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,72px);align-items:center}
+  .villa p.body{font-size:clamp(15px,1.3vw,18px);color:var(--ink-soft);max-width:46ch;margin-top:22px}
+  .villafacts{display:flex;flex-wrap:wrap;gap:10px;margin-top:clamp(26px,3vw,36px)}
+  .villafacts span{
+    font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+    border:1px solid var(--line);padding:9px 15px;border-radius:100px;color:var(--ink-soft);
+  }
+  .villa .vidcol{display:flex;justify-content:center}
+  .villa .vidwrap{
+    position:relative;width:100%;max-width:340px;
+    border-radius:18px;overflow:hidden;background:#1b1b1b;
+    box-shadow:0 40px 70px -44px rgba(31,18,22,.7);
+  }
+  .villa video{width:100%;height:auto;display:block}
+  .villa .credit{
+    margin-top:14px;font-family:"JetBrains Mono",monospace;font-size:10.5px;
+    letter-spacing:.12em;text-transform:uppercase;color:rgba(94,75,82,.75);text-align:center;
+  }
+  .villa .credit a{color:var(--pink);text-decoration:none}
+
+  /* ---------- TEASER ---------- */
+  .teaser{background:var(--grad);color:#fff;text-align:center}
+  .teaser h2{font-family:"Fraunces",serif;font-weight:360;font-style:italic;font-size:clamp(28px,4.2vw,56px);line-height:1.08;letter-spacing:-.02em;max-width:20ch;margin:0 auto}
+  .teaser .vidwrap{
+    position:relative;
+    margin:clamp(30px,3.6vw,46px) auto 0;max-width:330px;
+    border-radius:18px;overflow:hidden;box-shadow:0 40px 70px -40px rgba(60,4,30,.7);
+    background:#2a0a1a;
+  }
+  /* autoplay only works muted, so the music needs a way in */
+  .soundbtn{
+    position:absolute;right:12px;top:12px;
+    font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;font-weight:500;cursor:pointer;
+    color:var(--ink);background:rgba(255,255,255,.9);border:0;
+    padding:8px 13px;border-radius:100px;
+    display:inline-flex;align-items:center;gap:6px;
+    backdrop-filter:blur(6px);transition:background .2s ease,transform .2s ease;
+  }
+  .soundbtn:hover{background:#fff;transform:translateY(-1px)}
+  .soundbtn[aria-pressed="true"]{background:var(--yellow)}
+  .teaser video{width:100%;height:auto;display:block}
+  .teaser .cap{
+    margin-top:20px;font-family:"JetBrains Mono",monospace;font-size:11px;
+    letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.85);
+  }
+
+  /* ---------- AGENDA ---------- */
+  .schedule{background:var(--ink);color:var(--cream)}
+  .schedule .eyebrow{color:var(--yellow)}
+  .schedule h2.big{color:var(--cream)}
+  .schedule h2.big em{color:var(--yellow)}
+  .daynav{
+    display:flex;gap:10px;flex-wrap:wrap;
+    margin-top:clamp(34px,4.6vw,56px);
+  }
+  .daytab{
+    flex:1 1 200px;text-align:left;cursor:pointer;
+    background:transparent;color:var(--cream);
+    border:1px solid rgba(250,243,230,.26);border-radius:10px;
+    padding:16px 18px;transition:background .25s ease,border-color .25s ease,transform .25s ease;
+    font-family:inherit;
+  }
+  .daytab:hover{border-color:rgba(250,243,230,.6);transform:translateY(-2px)}
+  .daytab .dnum{
+    display:block;
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;
+    text-transform:uppercase;color:rgba(250,243,230,.55);
+  }
+  .daytab .ddate{display:block;font-family:"Fraunces",serif;font-size:clamp(20px,2.1vw,27px);font-weight:400;margin-top:8px;line-height:1.1}
+  .daytab .dname{display:block;font-size:13.5px;color:rgba(250,243,230,.66);margin-top:6px}
+  .daytab[aria-selected="true"]{background:var(--grad);border-color:transparent;color:#fff}
+  .daytab[aria-selected="true"] .dnum{color:rgba(255,255,255,.85)}
+  .daytab[aria-selected="true"] .dname{color:rgba(255,255,255,.92)}
+
+  .daypanel[hidden]{display:none}
+  .rows{margin-top:clamp(30px,4vw,52px);border-top:1px solid rgba(250,243,230,.18)}
+  .row{
+    display:grid;grid-template-columns:200px 1fr auto;gap:clamp(16px,3vw,48px);
+    align-items:baseline;padding:clamp(22px,3vw,34px) 0;
+    border-bottom:1px solid rgba(250,243,230,.18);
+  }
+  .row .time{
+    font-family:"JetBrains Mono",monospace;font-size:14px;font-weight:500;
+    color:var(--yellow);letter-spacing:.02em;line-height:1.5;
+  }
+  .row .what{font-family:"Fraunces",serif;font-size:clamp(22px,2.6vw,34px);font-weight:380;line-height:1.08;letter-spacing:-.01em}
+  .row .what .opt{font-size:.62em;font-style:italic;opacity:.72}
+  .row .who{font-size:14px;color:rgba(250,243,230,.74);margin-top:8px;max-width:56ch}
+  .row .tagn{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:rgba(250,243,230,.5);white-space:nowrap;align-self:center;
+  }
+  .row.soft .what{color:rgba(250,243,230,.86);font-size:clamp(20px,2.2vw,28px)}
+  .daynote{
+    margin-top:clamp(24px,3vw,36px);display:flex;flex-wrap:wrap;gap:12px;align-items:center;
+    font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(250,243,230,.72);
+  }
+  .daynote .chip{border:1px solid rgba(250,243,230,.3);padding:8px 14px;border-radius:100px}
+
+  /* ---------- GOOD TO KNOW ---------- */
+  .know{background:var(--cream-2);border-top:1px solid var(--line)}
+  .knowgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3.4vw,48px);margin-top:clamp(38px,4.6vw,60px)}
+  .know .k{border-top:2px solid var(--pink);padding-top:18px}
+  .know .k h3{font-family:"Fraunces",serif;font-weight:420;font-size:clamp(22px,2.2vw,28px);line-height:1.12}
+  .know .k p{font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-top:10px}
+  .know .k p b{color:var(--ink)}
+  .know .k a{color:var(--pink);text-decoration:none;border-bottom:1px solid rgba(236,47,142,.35)}
+
+  /* ---------- SHARE ---------- */
+  .share{
+    /* butter ground + a hotter pink; body copy uses the deeper tone to stay readable */
+    --butter:#f8e6a0;
+    --hot:#f5008c;
+    --hot-deep:#c4006e;
+    background:var(--butter);color:var(--hot-deep);
+  }
+  .share .eyebrow{color:var(--hot)}
+  .share h2.big{color:var(--hot)}
+  .share .handle{
+    font-family:"Fraunces",serif;font-weight:400;font-style:italic;
+    font-size:clamp(40px,8vw,110px);line-height:.95;letter-spacing:-.02em;
+    color:var(--hot);display:block;margin:clamp(10px,2vw,20px) 0 clamp(30px,4vw,50px);
+    word-break:break-word;text-decoration:none;transition:opacity .2s ease;
+  }
+  a.handle:hover{opacity:.82}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px);margin-top:20px}
+  .step{border-top:2px solid rgba(196,0,110,.32);padding-top:18px}
+  .step .n{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.2em;opacity:.62}
+  .step p{font-size:clamp(15px,1.3vw,17px);margin-top:10px;line-height:1.45;font-weight:500}
+  .hashwrap{margin-top:clamp(40px,5vw,64px);display:flex;flex-wrap:wrap;gap:12px}
+  .hash{
+    font-family:"JetBrains Mono",monospace;font-size:13px;font-weight:500;
+    background:rgba(245,0,140,.09);border:1px solid rgba(245,0,140,.42);
+    color:var(--hot-deep);padding:9px 16px;border-radius:100px;
+  }
+  .hashnote{margin-top:18px;font-size:13.5px;line-height:1.55;color:rgba(196,0,110,.9);max-width:60ch}
+  .disclosure{
+    margin-top:clamp(28px,3.6vw,40px);padding:20px 24px;border-radius:8px;
+    background:rgba(245,0,140,.09);border:1px solid rgba(245,0,140,.2);
+    font-size:14px;line-height:1.55;max-width:62ch;color:var(--hot-deep);
+  }
+  .disclosure b{color:var(--hot)}
+
+  /* ---------- STATS / THE PHENOMENON ---------- */
+  .stats{background:var(--grad);color:#fff}
+  .stats .eyebrow{color:#fff}
+  .stats h2.phen{
+    font-family:"Fraunces",serif;font-optical-sizing:auto;
+    font-weight:340;line-height:.95;letter-spacing:-.02em;
+    font-size:clamp(42px,7.6vw,104px);color:#fff;
+  }
+  .stats h2.phen em{font-style:italic;color:var(--yellow)}
+  .stats .phensub{
+    margin-top:clamp(20px,2.6vw,30px);max-width:44ch;
+    font-size:clamp(16px,1.7vw,21px);line-height:1.45;color:rgba(255,255,255,.95);
+  }
+  .statline{
+    margin-top:clamp(44px,5.4vw,76px);padding-top:clamp(20px,2.4vw,28px);
+    border-top:1px solid rgba(255,255,255,.35);
+    display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.6vw,34px);
+  }
+  .stat .num{font-family:"Fraunces",serif;font-size:clamp(30px,3.8vw,52px);font-weight:420;line-height:1;color:#fff}
+  .stat .lab{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;margin-top:10px;color:rgba(255,255,255,.85);
+  }
+  .statmore{
+    margin-top:clamp(38px,4.6vw,56px);display:inline-flex;align-items:center;gap:9px;
+    font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    text-decoration:none;color:var(--ink);background:#fff;padding:14px 24px;border-radius:100px;
+    font-weight:500;transition:transform .2s ease;
+  }
+  .statmore:hover{transform:translateY(-2px)}
+  /* soft halo + an outward ring pulse to pull the eye to the one link we want clicked */
+  .statmore{animation:glowpulse 2.6s ease-in-out infinite}
+  .statmore:hover{animation-duration:1.3s}
+  @keyframes glowpulse{
+    0%,100%{box-shadow:0 0 16px 2px rgba(255,255,255,.4), 0 0 0 0 rgba(255,255,255,.5)}
+    50%{box-shadow:0 0 34px 9px rgba(255,255,255,.75), 0 0 0 14px rgba(255,255,255,0)}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .statmore{animation:none;box-shadow:0 0 26px 5px rgba(255,255,255,.55)}
+  }
+
+  /* ---------- PRODUCTS ---------- */
+  .products{background:var(--cream)}
+  .prodhead{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px}
+  .prodgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
+  .card{
+    background:var(--cream-2);border-radius:10px;overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:transform .35s ease, box-shadow .35s ease;
+  }
+  a.card{text-decoration:none;color:inherit}
+  .card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -30px rgba(184,18,95,.5)}
+  a.card:hover .name{color:var(--pink)}
+  .card .imgwrap{aspect-ratio:1/1;overflow:hidden}
+  .card .imgwrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+  .card:hover .imgwrap img{transform:scale(1.045)}
+  .card .body{padding:clamp(20px,2.2vw,30px)}
+  .card .name{font-family:"Fraunces",serif;font-size:clamp(24px,2.6vw,34px);font-weight:400}
+  .card .desc{font-size:13.5px;line-height:1.5;color:var(--ink-soft);margin-top:8px;max-width:26ch}
+
+  /* ---------- FUN FACTS ---------- */
+  .facts{background:var(--pink-soft);color:var(--ink)}
+  .facts .eyebrow{color:var(--pink-deep)}
+  .facts h2.big{color:var(--ink)}
+  .factgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,56px);margin-top:clamp(44px,5vw,72px)}
+  .fact h3{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(24px,2.4vw,30px);line-height:1.08;margin-bottom:16px}
+  .fact h3 span{color:var(--pink-deep)}
+  .fact p{font-size:14.5px;line-height:1.6;color:rgba(31,18,22,.8)}
+  .fact p + p{margin-top:12px}
+  .fact b{color:var(--ink)}
+
+  .factcta{
+    margin-top:clamp(44px,5.4vw,76px);padding-top:clamp(28px,3.4vw,44px);
+    border-top:1px solid rgba(31,18,22,.18);
+    display:flex;justify-content:space-between;align-items:flex-end;
+    flex-wrap:wrap;gap:24px;
+  }
+  .factcta h3{
+    font-family:"Fraunces",serif;font-weight:360;letter-spacing:-.02em;line-height:1.06;
+    font-size:clamp(26px,3.6vw,46px);max-width:18ch;
+  }
+  .factcta h3 em{font-style:italic;color:var(--pink-deep)}
+  .factcta p{font-size:15px;line-height:1.55;color:rgba(31,18,22,.75);max-width:44ch;margin-top:14px}
+  .btn-about{
+    font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    text-decoration:none;color:#fff;background:var(--pink);padding:16px 28px;border-radius:100px;
+    font-weight:500;white-space:nowrap;transition:transform .2s ease, background .2s ease;
+  }
+  .btn-about:hover{transform:translateY(-2px);background:var(--pink-deep)}
+
+  /* ---------- PEOPLE ---------- */
+  .people{background:var(--cream);border-top:1px solid var(--line)}
+  .ppl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
+  .person .ph{
+    aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:var(--pink-soft);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .person .ph img{width:100%;height:100%;object-fit:cover}
+  .person .ph.ph--tbd{background:var(--grad)}
+  .person .ph .initials{
+    font-family:"Fraunces",serif;font-size:clamp(34px,4vw,52px);color:#fff;font-style:italic;
+  }
+  .person .nm{font-family:"Fraunces",serif;font-size:22px;font-weight:420;margin-top:16px}
+  .person .rl{font-size:13px;color:var(--ink-soft);margin-top:4px}
+  .person .hd{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--pink);margin-top:6px;letter-spacing:.04em}
+  .person .hd a{color:inherit;text-decoration:none}
+  .person .hd a:hover{text-decoration:underline}
+  a.person{text-decoration:none;color:inherit;display:block;transition:transform .3s ease}
+  a.person:hover{transform:translateY(-4px)}
+  a.person:hover .nm{color:var(--pink)}
+
+  .sponsors-head{margin-top:clamp(56px,7vw,96px)}
+  .sponsors-title{font-size:clamp(28px,4vw,48px);font-weight:360;letter-spacing:-.02em;line-height:1}
+  .sponsors-title em{font-style:italic;color:var(--pink)}
+  .sponsors-sub{margin-top:14px;font-size:15px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
+  .sponsor-slots{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,28px);margin-top:clamp(26px,3.4vw,40px);max-width:760px}
+  .slot{
+    border:1px dashed rgba(31,18,22,.28);border-radius:10px;
+    aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;
+    text-transform:uppercase;color:rgba(31,18,22,.4);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink);color:var(--cream);padding:clamp(60px,8vw,110px) 0 clamp(36px,4vw,56px)}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px}
+  .foot-word-img{width:clamp(190px,32vw,420px);height:auto}
+  .foot-r{text-align:right;font-family:"JetBrains Mono",monospace;font-size:13px;letter-spacing:.08em;line-height:2}
+  .foot-r a{color:var(--yellow);text-decoration:none}
+  .foot-tag{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(20px,2.4vw,30px);color:var(--yellow-soft);margin-top:clamp(30px,4vw,50px);max-width:28ch;line-height:1.22}
+  .foot-bot{
+    margin-top:clamp(40px,5vw,64px);padding-top:24px;border-top:1px solid rgba(250,243,230,.18);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,243,230,.55);
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:860px){
+    .villa .grid{grid-template-columns:1fr}
+    .villa .vidcol{order:-1}
+    .welcome .grid{grid-template-columns:1fr}
+    .welcome .imgcol{order:-1}
+    .welcome .imgcol img{aspect-ratio:16/10}
+    .row{grid-template-columns:1fr;gap:6px}
+    .row .tagn{display:none}
+    .steps{grid-template-columns:1fr}
+    .knowgrid{grid-template-columns:1fr}
+    .statline{grid-template-columns:repeat(2,1fr);gap:26px}
+    .prodgrid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
+    .factgrid{grid-template-columns:1fr}
+    .factcta{flex-direction:column;align-items:flex-start}
+    .ppl-grid{grid-template-columns:repeat(2,1fr)}
+    .sponsor-slots{grid-template-columns:repeat(3,1fr)}
+    .foot-r{text-align:left}
+    .daytab{flex:1 1 100%}
+  }
+  @media(max-width:560px){
+    .wordmark-img{width:150px}
+    .hero h1{font-size:clamp(46px,13.5vw,74px)}
+    .hero__sub{font-size:11.5px;letter-spacing:.11em}
+    .hero__meta{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .hero__meta .big{font-size:19px}
+    .hero__meta .sm{font-size:10px;letter-spacing:.08em;margin-top:6px}
+    .hero__dots{display:none}
+  }
+  @media(max-width:480px){
+    .ppl-grid{grid-template-columns:1fr;max-width:340px}
+    .hero__dots{display:none}
+  }
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .hero__slide{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__slides" id="slides" aria-hidden="true">
+    <div class="hero__slide on" style="background-image:url('assets/hero/h1.jpg')" title="Playacar Vista Estate — rooftop infinity pool looking out to the Caribbean"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h2.jpg')" title="Playacar Vista Estate — beach cabanas with white curtains and ocean horizon"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h3.jpg')" title="Playacar Vista Estate — poolside cabana beds framed by palms"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h4.jpg')" title="Playacar Vista Estate — rooftop pool and sun loungers above Playacar beach"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h5.jpg')" title="Playacar Vista Estate — infinity pool edge meeting the sea"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h6.jpg')" title="Playacar Vista Estate — pool deck steps from the beach"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h7.jpg')" title="Playacar Vista Estate — shaded rooftop terrace lounge"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h8.jpg')" title="Playacar Vista Estate — garden pool surrounded by palms and flowers"></div>
+    <div class="hero__slide" style="background-image:url('assets/hero/h9.jpg')" title="Playacar Vista Estate — the Caribbean from above"></div>
+  </div>
+  <div class="hero__tint"></div>
+  <div class="wrap hero__inner" style="display:flex;flex-direction:column;flex:1">
+    <div class="hero__top">
+      <img class="wordmark-img" src="assets/brand/logo-ooo.png" alt="Nancy Out of Office">
+    </div>
+    <div class="hero__center">
+      <h1 class="serif"><span class="l1">You're invited.</span><span class="l2">And excused.</span></h1>
+      <p class="hero__sub">Out of office with Nancy.<br>Pleasure is wellness.</p>
+    </div>
+    <div class="hero__meta">
+      <div><div class="big">9–12 Sept</div><div class="sm">Four days, three nights</div></div>
+      <div><div class="big">Playacar Vista Estate</div><div class="sm">Playa del Carmen, Mexico</div></div>
+    </div>
+  </div>
+  <div class="hero__dots" id="dots"></div>
+</header>
+
+<!-- WELCOME -->
+<section class="welcome" id="welcome">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="kicker eyebrow">Thank you for coming</span>
+        <h2 class="big serif">Pleasure is<br><em>wellness.</em></h2>
+        <p class="body">Welcome to <b>Nancy Out of Office</b> — we're so happy you're here. Think of this as your little guide to the four days: what's on and when, how to tag &amp; share, and the lovely humans making it all happen. Swim, sleep in, get curious, and let the auto-reply do the talking. 🍋</p>
+      </div>
+      <div class="imgcol reveal">
+        <img src="assets/hero/welcome.jpg" alt="Nancy floats and an Out of Office sign in the villa pool" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE VILLA -->
+<section class="villa" id="villa">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="kicker eyebrow">Where you're staying</span>
+        <h2 class="big serif">Playacar <em>Vista Estate.</em></h2>
+        <p class="body">Two side-by-side villas — Vista Hermosa and Alta Vista — in the gated Playacar Phase I, with the beach fifteen metres from the door. Two rooftop pools looking out over the Caribbean, a chef and butler on hand, and enough room that you never have to see anyone before coffee.</p>
+        <div class="villafacts">
+          <span>16 bedrooms</span>
+          <span>2 rooftop pools</span>
+          <span>15m to the beach</span>
+          <span>Chef &amp; butler</span>
+        </div>
+      </div>
+      <div class="vidcol reveal">
+        <div>
+          <div class="vidwrap">
+            <video class="js-video" src="assets/hero/villa-tour.mp4" poster="assets/hero/villa-tour-poster.jpg"
+                   autoplay muted loop playsinline preload="metadata"
+                   aria-label="Playacar Vista Estate villa tour"></video>
+            <button class="soundbtn js-sound" type="button" aria-pressed="false">
+              <span aria-hidden="true">♪</span> Sound on
+            </button>
+          </div>
+          <p class="credit">Villa film by <a href="https://www.instagram.com/mayaluxe/" target="_blank" rel="noopener">@mayaluxe</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEASER -->
+<section class="teaser" id="teaser">
+  <div class="wrap">
+    <h2 class="serif reveal">Sorry she's OOO. She's unavailable, she's busy — she's coming to Cancún, Playa del Carmen.</h2>
+    <div class="vidwrap reveal">
+      <video id="teaservid" src="assets/hero/teaser.mp4" poster="assets/hero/teaser-poster.jpg"
+             autoplay muted loop playsinline preload="metadata"
+             aria-label="Nancy Out of Office teaser"></video>
+      <button class="soundbtn js-sound" id="soundbtn" type="button" aria-pressed="false">
+        <span aria-hidden="true">♪</span> Sound on
+      </button>
+    </div>
+    <p class="cap reveal">Out of office · auto-reply on</p>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="schedule" id="agenda">
+  <div class="wrap">
+    <span class="kicker eyebrow">The run of show</span>
+    <h2 class="big serif">Four days, <em>timed.</em></h2>
+
+    <div class="daynav" role="tablist" aria-label="Trip agenda by day">
+      <button class="daytab" role="tab" id="tab-1" aria-controls="day-1" aria-selected="true">
+        <span class="dnum">Day One</span>
+        <span class="ddate serif">Wed 9 Sept</span>
+        <span class="dname">Arrivals &amp; welcome dinner</span>
+      </button>
+      <button class="daytab" role="tab" id="tab-2" aria-controls="day-2" aria-selected="false">
+        <span class="dnum">Day Two</span>
+        <span class="ddate serif">Thu 10 Sept</span>
+        <span class="dname">Nancy workshops</span>
+      </button>
+      <button class="daytab" role="tab" id="tab-3" aria-controls="day-3" aria-selected="false">
+        <span class="dnum">Day Three</span>
+        <span class="ddate serif">Fri 11 Sept</span>
+        <span class="dname">Couples &amp; BFF day</span>
+      </button>
+      <button class="daytab" role="tab" id="tab-4" aria-controls="day-4" aria-selected="false">
+        <span class="dnum">Day Four</span>
+        <span class="ddate serif">Sat 12 Sept</span>
+        <span class="dname">Check out</span>
+      </button>
+    </div>
+
+    <!-- DAY 1 -->
+    <div class="daypanel" role="tabpanel" id="day-1" aria-labelledby="tab-1">
+      <div class="rows">
+        <div class="row soft">
+          <div class="time">All day</div>
+          <div>
+            <div class="what serif">Arrivals</div>
+            <div class="who">Land in Cancún and transfer straight to Playacar Vista Estate. Kitchen and bar are open all day — settle in at your own pace, no rush.</div>
+          </div>
+          <div class="tagn">Playacar Vista Estate</div>
+        </div>
+        <div class="row">
+          <div class="time">3:00–7:00pm</div>
+          <div>
+            <div class="what serif">Meet, greet &amp; chill with the DJ</div>
+            <div class="who">Open bar, small bites and a DJ on the terrace as everyone rolls in. Come as you are.</div>
+          </div>
+          <div class="tagn">Main villa</div>
+        </div>
+        <div class="row">
+          <div class="time">7:00–9:30pm</div>
+          <div>
+            <div class="what serif">Welcome dinner</div>
+            <div class="who">S'mores, buffet dinner and a DJ.</div>
+          </div>
+          <div class="tagn">Dinner</div>
+        </div>
+        <div class="row">
+          <div class="time">9:30–11:30pm</div>
+          <div>
+            <div class="what serif">Movie night <span class="opt">(optional)</span></div>
+            <div class="who">Nancy pillows, plushies and a rom-com. <b>Bring your own pyjamas</b> — and make them cute, this one's going on camera.</div>
+          </div>
+          <div class="tagn">Pyjamas on</div>
+        </div>
+      </div>
+      <div class="daynote">
+        <span class="chip">Bring your cutest pyjamas</span>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="daypanel" role="tabpanel" id="day-2" aria-labelledby="tab-2" hidden>
+      <div class="rows">
+        <div class="row">
+          <div class="time">8:00–9:00am</div>
+          <div>
+            <div class="what serif">Yoga or a run — both optional</div>
+            <div class="who">Yoga by the pool, with pink mats and blocks provided — or a morning run with <b>Britt and Rahul</b>.</div>
+          </div>
+          <div class="tagn">Optional</div>
+        </div>
+        <div class="row soft">
+          <div class="time">9:00–10:30am</div>
+          <div>
+            <div class="what serif">Breakfast at the villa</div>
+            <div class="who">Buffet, open until 10:30.</div>
+          </div>
+          <div class="tagn">Villa</div>
+        </div>
+        <div class="row">
+          <div class="time">9:00am–12:00pm</div>
+          <div>
+            <div class="what serif">Free time <span class="opt">(aka content creation time!)</span></div>
+            <div class="who">Three hours, yours. The villa, the pools and the beach are all fair game — shoot whatever you like.</div>
+          </div>
+          <div class="tagn">3 hrs</div>
+        </div>
+        <div class="row">
+          <div class="time">12:00–1:00pm</div>
+          <div>
+            <div class="what serif">Brunch with the panel</div>
+            <div class="who">A sharing session with <b>Dr Jila</b>, <b>Dr Tara</b> and <b>Ericka Hart</b> — 30-minute talk, 10 minutes of Q&amp;A, plus a live product demo. Ask them anything.</div>
+          </div>
+          <div class="tagn">Sharing session</div>
+        </div>
+        <div class="row soft">
+          <div class="time">1:00–2:00pm</div>
+          <div>
+            <div class="what serif">Buffet brunch</div>
+            <div class="who">Long table, no phones necessary.</div>
+          </div>
+          <div class="tagn">Villa</div>
+        </div>
+        <div class="row">
+          <div class="time">2:00–4:30pm</div>
+          <div>
+            <div class="what serif">Free time <span class="opt">(aka content creation time!)</span></div>
+            <div class="who">Another two and a half hours to shoot, swim or do absolutely nothing.</div>
+          </div>
+          <div class="tagn">2.5 hrs</div>
+        </div>
+        <div class="row">
+          <div class="time">4:30–6:00pm</div>
+          <div>
+            <div class="what serif">Nancy DIY Vibration Test &amp; Product Demo</div>
+            <div class="who">With Crystal. Build your own DIY vibration-test stage and shoot the content, plus a live product demo across the whole range.</div>
+          </div>
+          <div class="tagn">Hands on</div>
+        </div>
+        <div class="row">
+          <div class="time">7:30pm</div>
+          <div>
+            <div class="what serif">Dinner at the main villa</div>
+            <div class="who">Buffet at Playacar Vista Estate, with a short keynote from Momo &amp; Rahul on where Nancy goes next — from female pleasure to inviting your partner into the fun.</div>
+          </div>
+          <div class="tagn">Keynote · 15 min</div>
+        </div>
+      </div>
+      <div class="daynote">
+        <span class="chip">Learn the brand before the fun</span>
+        <span class="chip">5.5 hrs of free content time</span>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="daypanel" role="tabpanel" id="day-3" aria-labelledby="tab-3" hidden>
+      <div class="rows">
+        <div class="row">
+          <div class="time">8:00–9:00am</div>
+          <div>
+            <div class="what serif">Yoga or a run — both optional</div>
+            <div class="who">Same as yesterday: poolside yoga, or a run with Britt and Rahul.</div>
+          </div>
+          <div class="tagn">Optional</div>
+        </div>
+        <div class="row soft">
+          <div class="time">9:00–11:00am</div>
+          <div>
+            <div class="what serif">Breakfast &amp; get ready</div>
+            <div class="who">Longer breakfast today — you'll want it before the boat.</div>
+          </div>
+          <div class="tagn">Villa</div>
+        </div>
+        <div class="row">
+          <div class="time">9:00am–12:00pm</div>
+          <div>
+            <div class="what serif">Free time <span class="opt">(aka content creation time!)</span></div>
+            <div class="who">Three hours before lunch.</div>
+          </div>
+          <div class="tagn">3 hrs</div>
+        </div>
+        <div class="row soft">
+          <div class="time">12:00–2:00pm</div>
+          <div>
+            <div class="what serif">Lunch buffet at the villa</div>
+            <div class="who">Eat well — the afternoon is on the water.</div>
+          </div>
+          <div class="tagn">Villa</div>
+        </div>
+        <div class="row">
+          <div class="time">2:00–3:00pm</div>
+          <div>
+            <div class="what serif">Free time <span class="opt">(aka content creation time!)</span></div>
+            <div class="who">One last hour on dry land.</div>
+          </div>
+          <div class="tagn">1 hr</div>
+        </div>
+        <div class="row">
+          <div class="time">3:00–7:30pm</div>
+          <div>
+            <div class="what serif">Get wet and boat</div>
+            <div class="who">Everyone on one boat, out on the Caribbean. Swimwear, sunscreen and a change of clothes.</div>
+          </div>
+          <div class="tagn">Couples &amp; BFF day</div>
+        </div>
+        <div class="row">
+          <div class="time">7:30pm</div>
+          <div>
+            <div class="what serif">Farewell dinner</div>
+            <div class="who">Buffet back at the main villa. Last night, make it count.</div>
+          </div>
+          <div class="tagn">Main villa</div>
+        </div>
+      </div>
+      <div class="daynote">
+        <span class="chip">Bring swimwear &amp; sunscreen</span>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="daypanel" role="tabpanel" id="day-4" aria-labelledby="tab-4" hidden>
+      <div class="rows">
+        <div class="row">
+          <div class="time">By 11:00am</div>
+          <div>
+            <div class="what serif">Check out</div>
+            <div class="who">Rooms cleared by 11am and guests travel out from the villa. We'll confirm your airport transfer time the day before.</div>
+          </div>
+          <div class="tagn">Travelling out</div>
+        </div>
+      </div>
+      <div class="daynote">
+        <span class="chip">Check out by 11am</span>
+        <span class="chip">Airport transfers arranged</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHARE -->
+<section class="share" id="share">
+  <div class="wrap">
+    <span class="kicker eyebrow">Tag &amp; share the trip</span>
+    <h2 class="big serif">Post it.</h2>
+    <a class="handle serif" href="https://instagram.com/hellonancy_official" target="_blank" rel="noopener">@hellonancy_official</a>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="n">01</div>
+        <p>Add <b>@hellonancy_official</b> as a collaborator on your Reels and Feed posts.</p>
+      </div>
+      <div class="step reveal">
+        <div class="n">02</div>
+        <p>Post as much as you like across the four days — the merrier, the better. Stories count too.</p>
+      </div>
+      <div class="step reveal">
+        <div class="n">03</div>
+        <p>Use the five hashtags below so we can find, love, and reshare everything.</p>
+      </div>
+    </div>
+    <div class="hashwrap reveal">
+      <span class="hash">#NancyOOO</span>
+      <span class="hash">#OutOfOffice</span>
+      <span class="hash">#PlayaDelCarmen</span>
+      <span class="hash">#CreatorTrip</span>
+      <span class="hash">#PleasureIsWellness</span>
+    </div>
+    <p class="hashnote reveal">Instagram caps hashtags at five per post now, so these five are the set — one branded, one mood, one destination, one niche, one positioning. Please don't add more; a longer list works against you.</p>
+    <div class="disclosure reveal">
+      <b>Quick disclosure:</b> please turn on the <b>paid partnership</b> label and include <b>#ad</b> on your posts. Keeps everything above board and lets you share freely.
+    </div>
+  </div>
+</section>
+
+<!-- STATS / THE PHENOMENON -->
+<section class="stats" id="stats">
+  <div class="wrap">
+    <span class="kicker eyebrow">The phenomenon</span>
+    <h2 class="phen serif reveal">One lemon.<br>A million women.<br><em>250 million views.</em></h2>
+    <p class="phensub reveal">In under two years, Hello Nancy went from zero to the fastest-growing name in sexual wellness. We turned a taboo into a movement.</p>
+    <div class="statline">
+      <div class="stat reveal"><div class="num serif">1M+</div><div class="lab">Units sold</div></div>
+      <div class="stat reveal"><div class="num serif">150M+</div><div class="lab">Creator views</div></div>
+      <div class="stat reveal"><div class="num serif">4.7★</div><div class="lab">20,000+ reviews</div></div>
+      <div class="stat reveal"><div class="num serif">#1</div><div class="lab">TikTok's most popular toy</div></div>
+    </div>
+    <a class="statmore reveal" href="about.html">The full story →</a>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="prodhead">
+      <div class="reveal">
+        <span class="kicker eyebrow">The fruit basket</span>
+        <h2 class="big serif">Meet the <em>family.</em></h2>
+      </div>
+      <p class="lead reveal">Our products are quiet, discreet, and thoughtfully designed, with clean, minimal forms that don't draw attention or feel awkward to use.</p>
+    </div>
+    <div class="prodgrid">
+      <a class="card reveal" href="https://www.hellonancy.com/products/lem" target="_blank" rel="noopener">
+        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/brand/prod-lem.jpg" alt="Lem, the lemon massager"></div>
+        <div class="body">
+          <div class="name serif">Lem ↗</div>
+          <div class="desc">The little icon. 12 intensity levels, 100% waterproof, whisper-quiet.</div>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.hellonancy.com/products/berri" target="_blank" rel="noopener">
+        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/brand/prod-berri.jpg" alt="Berri tapping massager"></div>
+        <div class="body">
+          <div class="name serif">Berri ↗</div>
+          <div class="desc">Rhythmic tapping made for edging — a slow build to a deeper finish.</div>
+        </div>
+      </a>
+      <a class="card reveal" href="https://www.hellonancy.com/products/avo-clitoral-massager" target="_blank" rel="noopener">
+        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/brand/prod-avo.jpg" alt="Avo massager"></div>
+        <div class="body">
+          <div class="name serif">Avo ↗</div>
+          <div class="desc">Turbocharged clit suction — deep, powerful, unmatched sensation.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FUN FACTS -->
+<section class="facts" id="facts">
+  <div class="wrap">
+    <span class="kicker eyebrow">Fun facts</span>
+    <h2 class="big serif">A little <em>about us.</em></h2>
+    <div class="factgrid">
+      <div class="fact reveal">
+        <h3 class="serif">What is <span>Nancy OOO?</span></h3>
+        <p>Our brand trip programme, where we bring creators together to switch off and tune in. A safe space to explore, unwind and enjoy the moment.</p>
+        <p><b>No agenda. No notifications. No apologies.</b> Playa del Carmen is our first stop — many more to come.</p>
+      </div>
+      <div class="fact reveal">
+        <h3 class="serif">Pleasure is <span>self-care.</span></h3>
+        <p>Nancy was built on one idea: pleasure is wellness, not a guilty extra. It belongs right next to your skincare, your workout, and your mental health.</p>
+        <p><b>Meet Lem 🍋</b> — our little icon. Every 25 seconds someone new discovers Lem: 12 intensity levels, 100% waterproof, and over a million sold.</p>
+      </div>
+      <div class="fact reveal">
+        <h3 class="serif">Who's in the <span>Nancy community?</span></h3>
+        <p>About <b>70% women</b> buying for themselves and <b>30% men</b> buying for their partners.</p>
+        <p><b>She:</b> The Empowered Explorer — values simplicity, discretion, and feeling in control. Pleasure is just another part of wellness.</p>
+        <p><b>He:</b> The Thoughtful Partner (usually 30–50), giving a gift that's meaningful and confidence-boosting, without the awkwardness.</p>
+      </div>
+    </div>
+
+    <div class="factcta reveal">
+      <div>
+        <h3 class="serif">There's a lot more to <em>Nancy.</em></h3>
+        <p>The full range, the 11 clinical experts who put their name next to ours, and everything we've built so far — Miami, London, and now Playa del Carmen.</p>
+      </div>
+      <a class="btn-about" href="about.html">About Nancy →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section class="people" id="people">
+  <div class="wrap">
+    <span class="kicker eyebrow">Your hosts</span>
+    <h2 class="big serif">The dream <em>team.</em></h2>
+    <div class="ppl-grid">
+      <div class="person reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/momoko.jpg" alt="Momo, Nancy co-founder" style="object-position:center 22%" onerror="this.remove()"></div>
+        <div class="nm serif">Momo</div>
+        <div class="rl">Nancy co-founder</div>
+      </div>
+      <div class="person reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/rahul.jpg" alt="Rahul, Nancy co-founder" style="object-position:center 16%" onerror="this.remove()"></div>
+        <div class="nm serif">Rahul</div>
+        <div class="rl">Nancy co-founder</div>
+      </div>
+      <div class="person reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/rachana.jpg" alt="Rachana, Nancy co-founder" style="object-position:center 0%" onerror="this.remove()"></div>
+        <div class="nm serif">Rachana</div>
+        <div class="rl">Nancy co-founder</div>
+      </div>
+      <div class="person reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/crystal.jpg" alt="Crystal, Brand Marketing &amp; Events" style="object-position:center 22%" onerror="this.remove()"></div>
+        <div class="nm serif">Crystal</div>
+        <div class="rl">Nancy Marketing Team · your on-site contact</div>
+        <div class="hd"><a href="mailto:crystal@hellonancy.com">crystal@hellonancy.com</a></div>
+      </div>
+      <div class="person reveal">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/britt.jpg" alt="Britt, Nancy Partnership Team" onerror="this.remove()"></div>
+        <div class="nm serif">Britt</div>
+        <div class="rl">Nancy Partnership Team · your on-site contact</div>
+        <div class="hd"><a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a></div>
+      </div>
+      <a class="person reveal" href="https://www.instagram.com/drjilasenemar" target="_blank" rel="noopener">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/dr-jila.jpg" alt="Dr Jila Senemar" onerror="this.parentNode.classList.add('ph--tbd');this.parentNode.innerHTML='<span class=\'initials serif\'>DJ</span>'"></div>
+        <div class="nm serif">Dr Jila</div>
+        <div class="rl">Board-certified OB-GYN, FACOG · Founder of JilaMD &amp; the Miami Menopause Collective</div>
+        <div class="hd">@drjilasenemar</div>
+      </a>
+      <a class="person reveal" href="https://www.instagram.com/luvbites.co" target="_blank" rel="noopener">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/dr-tara.jpg" alt="Dr Tara Suwinyattichaiporn" onerror="this.remove()"></div>
+        <div class="nm serif">Dr Tara</div>
+        <div class="rl">Sex &amp; relationship expert · @luvbites.co founder</div>
+        <div class="hd">@luvbites.co</div>
+      </a>
+      <a class="person reveal" href="https://www.instagram.com/ihartericka" target="_blank" rel="noopener">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/ericka-hart.jpg" alt="Ericka Hart" onerror="this.parentNode.classList.add('ph--tbd');this.parentNode.innerHTML='<span class=\'initials serif\'>EH</span>'"></div>
+        <div class="nm serif">Ericka Hart</div>
+        <div class="rl">Sexuality educator, M.Ed. · Writer, speaker &amp; model</div>
+        <div class="hd">@ihartericka</div>
+      </a>
+    </div>
+
+    <div class="sponsors-head reveal">
+      <span class="kicker eyebrow">Sponsors</span>
+      <h3 class="serif sponsors-title">Good company, <em>coming soon.</em></h3>
+      <p class="sponsors-sub">We're finalising the brands joining us in Playa del Carmen. We'll add them here — and we'll ask you to tag them too.</p>
+    </div>
+    <div class="sponsor-slots reveal">
+      <div class="slot">To be announced</div>
+      <div class="slot">To be announced</div>
+      <div class="slot">To be announced</div>
+    </div>
+  </div>
+</section>
+
+<!-- GOOD TO KNOW -->
+<section class="know" id="know">
+  <div class="wrap">
+    <span class="kicker eyebrow">Good to know</span>
+    <h2 class="big serif">The boring <em>bits.</em></h2>
+    <div class="knowgrid">
+      <div class="k reveal">
+        <h3 class="serif">Getting there</h3>
+        <p>Fly into <b>Cancún (CUN)</b>. A Nancy transfer will be waiting for you — send us your arrival time and we'll handle the rest. It's about an hour to the villa.</p>
+      </div>
+      <div class="k reveal">
+        <h3 class="serif">Where you're staying</h3>
+        <p><b>Playacar Vista Estate</b><br>Playacar Phase I, Playa del Carmen, Quintana Roo, Mexico.<br>Gated community, 24-hour security, and the beach is 15 metres from the door.</p>
+      </div>
+      <div class="k reveal">
+        <h3 class="serif">WiFi</h3>
+        <p>Full WiFi throughout both villas. The network and password will be on your welcome card at check-in — though the whole point is that you're unreachable.</p>
+      </div>
+      <div class="k reveal">
+        <h3 class="serif">What to pack</h3>
+        <p>Swimwear (a lot of it), <b>your cutest pyjamas</b> for movie night — they will be photographed — plus sunscreen and a hat for boat day. Towels and totes are on us.</p>
+      </div>
+      <div class="k reveal">
+        <h3 class="serif">Who to call</h3>
+        <p><b>Crystal</b> and <b>Britt</b> are your contacts for anything at all — schedule, transfers, content, emergencies.<br>
+        <a href="mailto:crystal@hellonancy.com">crystal@hellonancy.com</a><br>
+        <a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a></p>
+      </div>
+      <div class="k reveal">
+        <h3 class="serif">The house rules</h3>
+        <p>No agenda you can't skip. No notifications. No apologies. Everything on the schedule marked optional genuinely is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <img loading="lazy" decoding="async" class="foot-word-img" src="assets/brand/logo-ooo.png" alt="Nancy Out of Office">
+      <div class="foot-r">
+        <a href="about.html">About Nancy</a><br>
+        <a href="https://www.hellonancy.com" target="_blank" rel="noopener">www.hellonancy.com</a><br>
+        <a href="https://instagram.com/hellonancy_official" target="_blank" rel="noopener">@hellonancy_official</a><br>
+        <a href="mailto:crystal@hellonancy.com">crystal@hellonancy.com</a><br>
+        <a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a><br>
+        Playacar Vista Estate<br>
+        Playa del Carmen · 9–12 Sept 2026
+      </div>
+    </div>
+    <div class="foot-tag serif">Currently unavailable. Extremely available to only myself and I.</div>
+    <div class="foot-bot">
+      <span>#NancyOOO · #OutOfOffice · #PleasureIsWellness</span>
+      <span>© Nancy — Break taboo. Embrace pleasure.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* reveal on scroll */
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  /* hero slideshow */
+  (function(){
+    const slides=[...document.querySelectorAll('.hero__slide')];
+    const dots=document.getElementById('dots');
+    if(slides.length<2) return;
+    let i=0,timer=null;
+    const video=null;
+    const HOLD=()=>5600;
+    const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    slides.forEach((_,n)=>{
+      const b=document.createElement('button');
+      b.setAttribute('aria-label','Show villa photo '+(n+1)+' of '+slides.length);
+      b.setAttribute('aria-current', n===0?'true':'false');
+      b.addEventListener('click',()=>{go(n);restart()});
+      dots.appendChild(b);
+    });
+    const btns=[...dots.children];
+    function go(n){
+      slides[i].classList.remove('on'); btns[i].setAttribute('aria-current','false');
+      i=n; slides[i].classList.add('on'); btns[i].setAttribute('aria-current','true');
+      if(video){ if(slides[i]===video){ try{video.currentTime=0}catch(e){} video.play().catch(()=>{}) } else video.pause(); }
+    }
+    function next(){go((i+1)%slides.length)}
+    function restart(){
+      if(timer)clearTimeout(timer);
+      if(reduce) return;
+      timer=setTimeout(function tick(){ next(); timer=setTimeout(tick,HOLD(i)) },HOLD(i));
+    }
+    if(video) video.play().catch(()=>{});
+    if(!reduce) restart();
+    document.addEventListener('visibilitychange',()=>{
+      if(document.hidden){clearTimeout(timer); if(video)video.pause()}
+      else{ if(video&&slides[i]===video) video.play().catch(()=>{}); restart() }
+    });
+  })();
+
+  /* teaser sound toggle */
+  (function(){
+    document.querySelectorAll('.js-sound').forEach(b=>{
+      const v=b.parentNode.querySelector('video');
+      if(!v) return;
+      b.addEventListener('click',()=>{
+        // only one soundtrack at a time
+        document.querySelectorAll('video').forEach(o=>{if(o!==v)o.muted=true});
+        document.querySelectorAll('.js-sound').forEach(o=>{
+          if(o!==b){o.setAttribute('aria-pressed','false');
+            o.innerHTML='<span aria-hidden="true">\u266a</span> Sound on'}
+        });
+        v.muted=!v.muted;
+        if(!v.muted && v.paused) v.play().catch(()=>{});
+        b.setAttribute('aria-pressed', String(!v.muted));
+        b.innerHTML = v.muted ? '<span aria-hidden="true">\u266a</span> Sound on'
+                              : '<span aria-hidden="true">\u266b</span> Sound off';
+      });
+    });
+  })();
+
+  /* agenda day tabs */
+  (function(){
+    const tabs=[...document.querySelectorAll('.daytab')];
+    const panels=tabs.map(t=>document.getElementById(t.getAttribute('aria-controls')));
+    function select(n){
+      tabs.forEach((t,k)=>{
+        t.setAttribute('aria-selected', k===n?'true':'false');
+        panels[k].hidden = k!==n;
+      });
+      panels[n].querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+    }
+    tabs.forEach((t,n)=>{
+      t.addEventListener('click',()=>select(n));
+      t.addEventListener('keydown',e=>{
+        if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+          e.preventDefault();
+          const d=e.key==='ArrowRight'?1:-1;
+          const m=(n+d+tabs.length)%tabs.length;
+          tabs[m].focus(); select(m);
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
