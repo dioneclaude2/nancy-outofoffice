@@ -346,8 +346,9 @@
   /* ---------- PRODUCTS ---------- */
   .products{background:var(--cream)}
   .prodhead{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px}
-  .prodgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
+  .prodgrid{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;margin-top:clamp(32px,4vw,50px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.prodgrid::-webkit-scrollbar{height:7px}.prodgrid::-webkit-scrollbar-track{background:transparent}.prodgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}.railhint{display:flex;align-items:center;gap:8px;margin-top:16px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}.railhint i{font-style:normal;font-size:14px}
   .card{
+    flex:0 0 300px;scroll-snap-align:start;
     background:var(--cream-2);border-radius:10px;overflow:hidden;
     display:flex;flex-direction:column;
     transition:transform .35s ease, box-shadow .35s ease;
@@ -450,7 +451,7 @@
     .steps{grid-template-columns:1fr}
     .knowgrid{grid-template-columns:1fr}
     .statline{grid-template-columns:repeat(2,1fr);gap:26px}
-    .prodgrid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
+    .card{flex:0 0 78vw}
     .factgrid{grid-template-columns:1fr}
     .factcta{flex-direction:column;align-items:flex-start}
     .ppl-grid{grid-template-columns:repeat(2,1fr)}
@@ -936,6 +937,7 @@
         </div>
       </a>
     </div>
+    <div class="railhint reveal"><i>&rarr;</i> Scroll for the full family</div>
   </div>
 </section>
 

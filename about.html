@@ -94,8 +94,8 @@
 
   /* RANGE */
   .range{background:var(--cream)}
-  .rangegrid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.4vw,18px);margin-top:clamp(34px,4.2vw,54px)}
-  .pcard{background:var(--cream-2);border-radius:10px;overflow:hidden}
+  .rangegrid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;margin-top:clamp(28px,3.4vw,42px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.rangegrid::-webkit-scrollbar{height:7px}.rangegrid::-webkit-scrollbar-track{background:transparent}.rangegrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
+  .pcard{flex:0 0 208px;scroll-snap-align:start;background:var(--cream-2);border-radius:10px;overflow:hidden}@media(max-width:560px){.pcard{flex:0 0 62vw}}
   .pcard .imgwrap{aspect-ratio:1/1;overflow:hidden}
   .pcard img{width:100%;height:100%;object-fit:cover}
   .pcard .b{padding:14px 14px 18px}
@@ -158,12 +158,12 @@
   @media(max-width:900px){
     .phengrid,.whygrid,.hpgrid,.case{grid-template-columns:1fr}
     .case:nth-child(even) .casetxt{order:0}
-    .rangegrid{grid-template-columns:repeat(3,1fr)}
+    
     
     .foot-r{text-align:left}
   }
   @media(max-width:560px){
-    .rangegrid{grid-template-columns:repeat(2,1fr)}
+    
     
     .statgrid{grid-template-columns:1fr}
     .ahero__meta{grid-template-columns:repeat(2,1fr)}
@@ -273,6 +273,7 @@
       <div class="pcard"><div class="imgwrap"><img src="assets/products/ace.jpg" alt="Ace" loading="lazy"></div><div class="b"><div class="nm serif">Ace</div><div class="ds">Air-suction, Center Court collection.</div></div></div>
       <div class="pcard"><div class="imgwrap"><img src="assets/products/smash.jpg" alt="Smash" loading="lazy"></div><div class="b"><div class="nm serif">Smash</div><div class="ds">Wand with a tennis-ball head.</div></div></div>
     </div>
+    <div class="railhint reveal"><i>&rarr;</i> Scroll for the full range</div>
     <div class="specs reveal">
       <span>Medical-grade silicone</span>
       <span>Waterproof</span>
