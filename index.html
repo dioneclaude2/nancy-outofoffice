@@ -177,16 +177,111 @@
   }
   .villa .credit a{color:var(--pink);text-decoration:none}
 
+  /* ---------- CONTENT DIRECTION ---------- */
+  .direction{background:var(--pink-soft);color:var(--ink)}
+  .direction .eyebrow{
+    color:var(--pink-deep);
+    font-size:clamp(14px,1.5vw,18px);letter-spacing:.2em;font-weight:700;
+    margin-bottom:clamp(18px,2.2vw,28px);
+  }
+  .direction .eyebrow::before{width:46px}
+  .direction .lede{
+    font-family:"Fraunces",serif;font-weight:340;font-style:italic;
+    font-size:clamp(22px,3vw,40px);line-height:1.18;letter-spacing:-.01em;
+    color:var(--pink-deep);max-width:22ch;margin-top:clamp(20px,2.4vw,30px);
+  }
+
+  /* three statements — big numeral, short line */
+  .dirgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(44px,5.4vw,76px)}
+  .dir{border-top:2px solid rgba(184,18,95,.32);padding-top:18px}
+  .dir .n{
+    font-family:"Fraunces",serif;font-size:clamp(38px,5vw,62px);font-weight:420;
+    line-height:1;color:var(--pink);opacity:.55;
+  }
+  .dir h3{font-family:"Fraunces",serif;font-weight:420;font-size:clamp(23px,2.5vw,32px);line-height:1.08;margin-top:10px}
+  .dir p{font-size:15.5px;line-height:1.55;color:rgba(31,18,22,.8);margin-top:12px;max-width:32ch}
+
+  /* the reveal — the one idea that gets its own block */
+  .reveal-band{
+    margin-top:clamp(44px,5.4vw,76px);background:var(--ink);color:var(--cream);
+    border-radius:22px;overflow:hidden;
+    display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:clamp(24px,3vw,44px);
+    padding:clamp(28px,3.4vw,48px);
+  }
+  .rb-lab{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--yellow)}
+  .rb-line{
+    font-family:"Fraunces",serif;font-weight:360;font-size:clamp(26px,4vw,54px);
+    line-height:1.06;letter-spacing:-.02em;margin-top:14px;
+  }
+  .rb-line em{font-style:italic;color:var(--yellow)}
+  .rb-sub{font-size:15px;line-height:1.55;color:rgba(250,243,230,.8);margin-top:16px;max-width:46ch}
+  .rb-img{width:100%;border-radius:16px;aspect-ratio:1/1;object-fit:cover}
+
+  /* chips */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .chips span{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em;
+    padding:7px 13px;border-radius:100px;
+    border:1px solid rgba(250,243,230,.34);color:rgba(250,243,230,.9);
+  }
+  .chips--on span{border-color:rgba(255,255,255,.45);color:#fff}
+  .chips--dk span{border-color:rgba(31,18,22,.3);color:rgba(31,18,22,.82)}
+
+  /* pillars */
+  .pillars-head{margin-top:clamp(52px,6.4vw,88px);border-top:1px solid rgba(184,18,95,.28);padding-top:clamp(32px,3.8vw,48px)}
+  .pillars-head h3{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(28px,4vw,52px);letter-spacing:-.02em;line-height:1}
+  .pillars-head h3 em{font-style:italic;color:var(--pink-deep)}
+  .pillars-head p{margin-top:12px;font-size:15.5px;line-height:1.55;color:rgba(31,18,22,.78);max-width:48ch}
+  .pillargrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.8vw,22px);margin-top:clamp(28px,3.4vw,42px)}
+  .pillar{border-radius:20px;padding:clamp(20px,2.2vw,26px);display:flex;flex-direction:column}
+  .pillar--p{background:var(--pink);color:#fff}
+  .pillar--y{background:var(--yellow);color:var(--ink)}
+  .pillar .pn{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;opacity:.8}
+  .pillar .emo{font-size:26px;margin-top:12px;line-height:1}
+  .pillar h4{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(21px,2.2vw,27px);line-height:1.1;margin-top:8px}
+  .pillar p{font-size:14px;line-height:1.5;margin-top:10px;opacity:.94}
+  .pillar .eg{
+    margin-top:14px;padding:13px 15px;border-radius:12px;
+    font-family:"Fraunces",serif;font-style:italic;font-size:13.5px;line-height:1.4;
+  }
+  .pillar .eg .lab{
+    display:block;font-family:"JetBrains Mono",monospace;font-style:normal;
+    font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    opacity:.75;margin-bottom:7px;font-weight:700;
+  }
+  .pillar--p .eg{background:rgba(255,255,255,.17)}
+  .pillar--y .eg{background:rgba(31,18,22,.09)}
+  .pillar .chips{margin-top:auto;padding-top:18px}
+
+  @media(max-width:1000px){.pillargrid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:860px){
+    .dirgrid{grid-template-columns:1fr;gap:26px}
+    .reveal-band{grid-template-columns:1fr}
+    .rb-img{max-width:280px;order:-1}
+  }
+  @media(max-width:560px){.pillargrid{grid-template-columns:1fr}}
+
   /* ---------- TEASER ---------- */
-  .teaser{background:var(--grad);color:#fff;text-align:center}
-  .teaser h2{font-family:"Fraunces",serif;font-weight:360;font-style:italic;font-size:clamp(28px,4.2vw,56px);line-height:1.08;letter-spacing:-.02em;max-width:20ch;margin:0 auto}
+  .teaser{background:var(--grad);color:#fff}
+  .tgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,76px);align-items:center}
+  .teaser .vidcol{display:flex;justify-content:center}
   .teaser .vidwrap{
-    position:relative;
-    margin:clamp(30px,3.6vw,46px) auto 0;max-width:330px;
+    position:relative;width:100%;max-width:330px;
     border-radius:18px;overflow:hidden;box-shadow:0 40px 70px -40px rgba(60,4,30,.7);
     background:#2a0a1a;
   }
-  /* autoplay only works muted, so the music needs a way in */
+  .teaser video{width:100%;height:auto;display:block}
+  .teaser .eyebrow{color:var(--yellow)}
+  .teaser .eyebrow::before{background:var(--yellow)}
+  .teaser h2{
+    font-family:"Fraunces",serif;font-weight:360;font-style:italic;
+    font-size:clamp(28px,4vw,54px);line-height:1.08;letter-spacing:-.02em;
+    max-width:18ch;
+  }
+  .teaser .cap{
+    margin-top:clamp(20px,2.4vw,28px);font-family:"JetBrains Mono",monospace;font-size:11px;
+    letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.85);
+  }
   .soundbtn{
     position:absolute;right:12px;top:12px;
     font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;
@@ -198,10 +293,9 @@
   }
   .soundbtn:hover{background:#fff;transform:translateY(-1px)}
   .soundbtn[aria-pressed="true"]{background:var(--yellow)}
-  .teaser video{width:100%;height:auto;display:block}
-  .teaser .cap{
-    margin-top:20px;font-family:"JetBrains Mono",monospace;font-size:11px;
-    letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.85);
+  @media(max-width:860px){
+    .tgrid{grid-template-columns:1fr;gap:34px}
+    .teaser h2{max-width:none}
   }
 
   /* ---------- AGENDA ---------- */
@@ -267,6 +361,16 @@
   .know .k p b{color:var(--ink)}
   .know .k a{color:var(--pink);text-decoration:none;border-bottom:1px solid rgba(236,47,142,.35)}
 
+  /* .know .k a sets pink text — outrank it or the label vanishes on the pink pill */
+  .know .k a.btn-pack{
+    display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+    color:#fff;border-bottom:0;
+    font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.14em;
+    text-transform:uppercase;font-weight:500;text-decoration:none;
+    background:var(--pink);padding:12px 20px;border-radius:100px;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .know .k a.btn-pack:hover{transform:translateY(-2px);background:var(--pink-deep);color:#fff}
   /* ---------- SHARE ---------- */
   .share{
     /* butter ground + a hotter pink; body copy uses the deeper tone to stay readable */
@@ -346,9 +450,8 @@
   /* ---------- PRODUCTS ---------- */
   .products{background:var(--cream)}
   .prodhead{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px}
-  .prodgrid{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;margin-top:clamp(32px,4vw,50px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.prodgrid::-webkit-scrollbar{height:7px}.prodgrid::-webkit-scrollbar-track{background:transparent}.prodgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}.railhint{display:flex;align-items:center;gap:8px;margin-top:16px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}.railhint i{font-style:normal;font-size:14px}
-  .card{
-    flex:0 0 300px;scroll-snap-align:start;
+  .prodgrid{display:flex;gap:clamp(12px,1.6vw,20px);margin-top:clamp(40px,5vw,64px);overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 18px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.prodgrid::-webkit-scrollbar{height:7px}.prodgrid::-webkit-scrollbar-track{background:transparent}.prodgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
+  .card{flex:0 0 230px;scroll-snap-align:start;
     background:var(--cream-2);border-radius:10px;overflow:hidden;
     display:flex;flex-direction:column;
     transition:transform .35s ease, box-shadow .35s ease;
@@ -359,9 +462,9 @@
   .card .imgwrap{aspect-ratio:1/1;overflow:hidden}
   .card .imgwrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
   .card:hover .imgwrap img{transform:scale(1.045)}
-  .card .body{padding:clamp(20px,2.2vw,30px)}
-  .card .name{font-family:"Fraunces",serif;font-size:clamp(24px,2.6vw,34px);font-weight:400}
-  .card .desc{font-size:13.5px;line-height:1.5;color:var(--ink-soft);margin-top:8px;max-width:26ch}
+  .card .body{padding:clamp(16px,1.6vw,22px)}
+  .card .name{font-family:"Fraunces",serif;font-size:clamp(20px,1.9vw,25px);font-weight:400}
+  .card .desc{font-size:13px;line-height:1.45;color:var(--ink-soft);margin-top:7px}
 
   /* ---------- FUN FACTS ---------- */
   .facts{background:var(--pink-soft);color:var(--ink)}
@@ -393,9 +496,17 @@
   }
   .btn-about:hover{transform:translateY(-2px);background:var(--pink-deep)}
 
+  /* ---------- PANELISTS ---------- */
+  .panel{background:var(--pink-soft);color:var(--ink)}
+  .panel .eyebrow{color:var(--pink-deep)}
+  .panel h2.big em{color:var(--pink-deep)}
+  .panel-sub{margin-top:20px;font-size:clamp(15px,1.3vw,18px);line-height:1.6;color:rgba(31,18,22,.78);max-width:54ch}
+  .panel-grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:760px;gap:clamp(18px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
+  .panel-grid .ph{background:#fff}
+
   /* ---------- PEOPLE ---------- */
   .people{background:var(--cream);border-top:1px solid var(--line)}
-  .ppl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
+  .ppl-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(18px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
   .person .ph{
     aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:var(--pink-soft);
     display:flex;align-items:center;justify-content:center;
@@ -413,18 +524,6 @@
   a.person{text-decoration:none;color:inherit;display:block;transition:transform .3s ease}
   a.person:hover{transform:translateY(-4px)}
   a.person:hover .nm{color:var(--pink)}
-
-  .sponsors-head{margin-top:clamp(56px,7vw,96px)}
-  .sponsors-title{font-size:clamp(28px,4vw,48px);font-weight:360;letter-spacing:-.02em;line-height:1}
-  .sponsors-title em{font-style:italic;color:var(--pink)}
-  .sponsors-sub{margin-top:14px;font-size:15px;line-height:1.5;color:var(--ink-soft);max-width:52ch}
-  .sponsor-slots{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,28px);margin-top:clamp(26px,3.4vw,40px);max-width:760px}
-  .slot{
-    border:1px dashed rgba(31,18,22,.28);border-radius:10px;
-    aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;
-    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;
-    text-transform:uppercase;color:rgba(31,18,22,.4);
-  }
 
   /* ---------- FOOTER ---------- */
   footer{background:var(--ink);color:var(--cream);padding:clamp(60px,8vw,110px) 0 clamp(36px,4vw,56px)}
@@ -451,11 +550,11 @@
     .steps{grid-template-columns:1fr}
     .knowgrid{grid-template-columns:1fr}
     .statline{grid-template-columns:repeat(2,1fr);gap:26px}
-    .card{flex:0 0 78vw}
+    
     .factgrid{grid-template-columns:1fr}
     .factcta{flex-direction:column;align-items:flex-start}
     .ppl-grid{grid-template-columns:repeat(2,1fr)}
-    .sponsor-slots{grid-template-columns:repeat(3,1fr)}
+    .panel-grid{grid-template-columns:1fr;max-width:340px}
     .foot-r{text-align:left}
     .daytab{flex:1 1 100%}
   }
@@ -468,6 +567,9 @@
     .hero__meta .sm{font-size:10px;letter-spacing:.08em;margin-top:6px}
     .hero__dots{display:none}
   }
+  @media(max-width:560px){
+    
+  }
   @media(max-width:480px){
     .ppl-grid{grid-template-columns:1fr;max-width:340px}
     .hero__dots{display:none}
@@ -479,17 +581,7 @@
     .reveal{opacity:1;transform:none;transition:none}
     .hero__slide{transition:none}
   }
-  .imgwrap.tbd{display:flex;align-items:center;justify-content:center;background:#f3ece9;min-height:190px}
-  .imgwrap.tbd span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9b8a85;font-weight:700;text-align:center;padding:0 12px}
-  .grouplabel{margin:56px 0 10px}
-  .draftnote{margin-top:24px;padding:14px 16px;border:1px dashed #c9a9b4;border-radius:10px;font-size:13px;line-height:1.7;color:#7a6b6d}
-  .draftnote b{color:#b3466f}
-  .msggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:26px}
-  .msgcard{background:#fff;border:1px solid #efdce0;border-radius:16px;padding:18px 18px 20px}
-  .msgcard .n{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b3466f;font-weight:700}
-  .msgcard h4{margin:8px 0 6px;font-size:19px;line-height:1.15}
-  .msgcard p{font-size:13.5px;line-height:1.6;color:#6d5f61;margin:0}
-</style>
+.railhint{display:flex;align-items:center;gap:8px;margin-top:14px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}.railhint i{font-style:normal;font-size:14px}@media(max-width:640px){.prodgrid>*{flex:0 0 62vw}}</style>
 </head>
 <body>
 
@@ -539,6 +631,82 @@
   </div>
 </section>
 
+<!-- CONTENT DIRECTION -->
+<section class="direction" id="direction">
+  <div class="wrap">
+    <span class="kicker eyebrow">Content direction &amp; desired message</span>
+    <h2 class="big serif">Out of office. <em>On your own terms.</em></h2>
+    <p class="lede">The topic nobody talks about — turned into the trip everybody will.</p>
+
+    <div class="dirgrid">
+      <div class="dir reveal">
+        <div class="n">01</div>
+        <h3 class="serif">You come first.</h3>
+        <p>Pampering, unhurried, unapologetic. Four days where the only thing on the schedule is whatever you actually feel like doing.</p>
+      </div>
+      <div class="dir reveal">
+        <div class="n">02</div>
+        <h3 class="serif">Properly switched off.</h3>
+        <p>Slow mornings, long lunches, sun on your skin. Nothing on the agenda you can't skip, and nobody keeping score.</p>
+      </div>
+      <div class="dir reveal">
+        <div class="n">03</div>
+        <h3 class="serif">Then have fun with it.</h3>
+        <p>Nancy travels because it doesn't look like what it is. It photographs like an object, not a taboo — which is exactly why people share it.</p>
+      </div>
+    </div>
+
+    <div class="reveal-band reveal">
+      <div class="rb-txt">
+        <span class="rb-lab">The format</span>
+        <p class="rb-line serif">Play it as the fruit. <em>Then reveal what it is.</em></p>
+        <p class="rb-sub">That turn is the whole joke — and the reason people send it to a friend.</p>
+        <div class="chips">
+          <span>A lemon in the fruit bowl</span>
+          <span>A berry by the pool</span>
+          <span>A prop on the nightstand</span>
+        </div>
+      </div>
+      <img class="rb-img" src="assets/products/lem.jpg" alt="Lem, the lemon-shaped massager" loading="lazy" decoding="async">
+    </div>
+
+    <div class="pillars-head reveal">
+      <h3 class="serif">Four formats. <em>Every shot feeds one.</em></h3>
+      <p>Four villa days, one content library. Everyone off duty, and on camera by consent.</p>
+    </div>
+    <div class="pillargrid">
+      <div class="pillar pillar--p reveal">
+        <div class="pn">P01</div><div class="emo" aria-hidden="true">🎥</div>
+        <h4 class="serif">Vlog-style highlights</h4>
+        <p>The trip as it happens.</p>
+        <div class="eg"><span class="lab">For example</span>A same-night recap: wake up, pool, workshop, dinner — ending in matching pyjamas.</div>
+        <div class="chips chips--on"><span>Arrivals</span><span>Dinners</span><span>The workshop</span><span>The boat</span></div>
+      </div>
+      <div class="pillar pillar--y reveal">
+        <div class="pn">P02</div><div class="emo" aria-hidden="true">😂</div>
+        <h4 class="serif">Skits + memes</h4>
+        <p>Group-chat humour. Nothing anyone hasn't opted into.</p>
+        <div class="eg"><span class="lab">For example</span>Unboxing the welcome box, pulling out a lemon, straight face. “It’s a lemon.”</div>
+        <div class="chips chips--dk"><span>Unboxing fails</span><span>"Who packed this"</span><span>Boat-day chaos</span></div>
+      </div>
+      <div class="pillar pillar--p reveal">
+        <div class="pn">P03</div><div class="emo" aria-hidden="true">🌴</div>
+        <h4 class="serif">Video vignettes</h4>
+        <p>Mood, atmosphere, product POV through the villa.</p>
+        <div class="eg"><span class="lab">For example</span>Slow pan across the dinner table — candles, fruit bowl, Lem sitting in it like it belongs.</div>
+        <div class="chips chips--on"><span>Water &amp; light</span><span>Fruit-bowl cameos</span><span>Candlelight</span></div>
+      </div>
+      <div class="pillar pillar--y reveal">
+        <div class="pn">P04</div><div class="emo" aria-hidden="true">🎤</div>
+        <h4 class="serif">Mini mic series</h4>
+        <p>Pick Your Flavour deck in hand.</p>
+        <div class="eg"><span class="lab">For example</span>Hand someone the mic, draw a card: “Hot or cold?” Their face is the whole clip.</div>
+        <div class="chips chips--dk"><span>Vertical</span><span>One question per clip</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- THE VILLA -->
 <section class="villa" id="villa">
   <div class="wrap">
@@ -572,18 +740,25 @@
 </section>
 
 <!-- TEASER -->
-<section class="teaser" id="teaser">
+<section class="teaser">
   <div class="wrap">
-    <h2 class="serif reveal">Sorry she's OOO. She's unavailable, she's busy — she's coming to Cancún, Playa del Carmen.</h2>
-    <div class="vidwrap reveal">
-      <video id="teaservid" src="assets/hero/teaser.mp4" poster="assets/hero/teaser-poster.jpg"
-             autoplay muted loop playsinline preload="metadata"
-             aria-label="Nancy Out of Office teaser"></video>
-      <button class="soundbtn js-sound" id="soundbtn" type="button" aria-pressed="false">
-        <span aria-hidden="true">♪</span> Sound on
-      </button>
+    <div class="tgrid">
+      <div class="vidcol reveal">
+        <div class="vidwrap">
+          <video id="teaservid" src="assets/hero/teaser.mp4" poster="assets/hero/teaser-poster.jpg"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="Nancy Out of Office teaser"></video>
+          <button class="soundbtn js-sound" id="soundbtn" type="button" aria-pressed="false">
+            <span aria-hidden="true">&#9834;</span> Sound on
+          </button>
+        </div>
+      </div>
+      <div class="tcopy reveal">
+        <span class="kicker eyebrow">The auto-reply</span>
+        <h2 class="serif">Sorry she's OOO. She's unavailable, she's busy — she's coming to Cancún, Playa del Carmen.</h2>
+        <p class="cap">Out of office · auto-reply on</p>
+      </div>
     </div>
-    <p class="cap reveal">Out of office · auto-reply on</p>
   </div>
 </section>
 
@@ -850,30 +1025,6 @@
   </div>
 </section>
 
-<section class="products" id="direction">
-  <div class="wrap">
-    <div class="prodhead">
-      <div class="reveal">
-        <span class="kicker eyebrow">Content direction</span>
-        <h2 class="big serif">What we want people to <em>walk away with.</em></h2>
-      </div>
-      <p class="lead reveal">Four messages. If a post lands one of them, it is doing its job.</p>
-    </div>
-    <div class="msggrid reveal">
-      <div class="msgcard"><div class="n">Message 01</div><h4 class="serif">Pleasure is wellness.</h4>
-        <p>Not a guilty extra. Treat it the way you would sleep, food or movement.</p></div>
-      <div class="msgcard"><div class="n">Message 02</div><h4 class="serif">Cute enough to leave out.</h4>
-        <p>Design you would happily have on the nightstand. Nothing to hide in a drawer.</p></div>
-      <div class="msgcard"><div class="n">Message 03</div><h4 class="serif">Experts stand next to us.</h4>
-        <p>Doctors and educators put their names to this. Credible, never clinical.</p></div>
-      <div class="msgcard"><div class="n">Message 04</div><h4 class="serif">Say it out loud.</h4>
-        <p>Break the taboo by being unembarrassed. Warm and funny beats shock value.</p></div>
-    </div>
-    <div class="draftnote reveal"><b>Draft copy</b> &mdash; written from the brand voice already on this site.
-      Swap for the approved wording before this goes to creators.</div>
-  </div>
-</section>
-
 <!-- STATS / THE PHENOMENON -->
 <section class="stats" id="stats">
   <div class="wrap">
@@ -922,18 +1073,18 @@
           <div class="desc">Turbocharged clit suction — deep, powerful, unmatched sensation.</div>
         </div>
       </a>
-      <a class="card reveal" href="https://hellonancy.com/en-ph/products/ace-air-suction-massager" target="_blank" rel="noopener">
-        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/brand/prod-ace.jpg" alt="Ace"></div>
+      <a class="card reveal" href="https://hellonancy.com/products/ace-air-suction-massager" target="_blank" rel="noopener">
+        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/products/ace.jpg" alt="Ace air-suction massager"></div>
         <div class="body">
           <div class="name serif">Ace ↗</div>
-          <div class="desc">Air-suction massager from the Center Court collection.</div>
+          <div class="desc">Air suction in a tennis ball. Game, set, finish.</div>
         </div>
       </a>
-      <a class="card reveal" href="https://hellonancy.com/en-ph/products/smash-wand-vibrator" target="_blank" rel="noopener">
-        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/brand/prod-smash.jpg" alt="Smash"></div>
+      <a class="card reveal" href="https://hellonancy.com/products/smash-wand-vibrator" target="_blank" rel="noopener">
+        <div class="imgwrap"><img loading="lazy" decoding="async" src="assets/products/smash.jpg" alt="Smash wand vibrator"></div>
         <div class="body">
           <div class="name serif">Smash ↗</div>
-          <div class="desc">The wand, with a tennis-ball head.</div>
+          <div class="desc">Wand vibrator with a ball head — deep, rumbly, relentless.</div>
         </div>
       </a>
     </div>
@@ -1009,12 +1160,17 @@
         <div class="hd"><a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a></div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="grouplabel reveal">
-      <span class="kicker eyebrow">On the panel</span>
-      <h3 class="serif">Experts joining us.</h3>
-    </div>
-    <div class="ppl-grid">
+
+<!-- PANELISTS -->
+<section class="panel" id="panelists">
+  <div class="wrap">
+    <span class="kicker eyebrow">Day two · brunch</span>
+    <h2 class="big serif">Nancy's <em>panelists.</em></h2>
+    <p class="panel-sub reveal">Joining us for the sharing session over brunch on Thursday — a 30-minute talk, ten minutes of Q&amp;A, and a live product demo. Ask them anything.</p>
+    <div class="panel-grid">
       <a class="person reveal" href="https://www.instagram.com/drjilasenemar" target="_blank" rel="noopener">
         <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/dr-jila.jpg" alt="Dr Jila Senemar" onerror="this.parentNode.classList.add('ph--tbd');this.parentNode.innerHTML='<span class=\'initials serif\'>DJ</span>'"></div>
         <div class="nm serif">Dr Jila</div>
@@ -1027,9 +1183,7 @@
         <div class="rl">Sex &amp; relationship expert · @luvbites.co founder</div>
         <div class="hd">@luvbites.co</div>
       </a>
-      
     </div>
-
   </div>
 </section>
 
@@ -1054,6 +1208,7 @@
       <div class="k reveal">
         <h3 class="serif">What to pack</h3>
         <p>Swimwear (a lot of it), <b>your cutest pyjamas</b> for movie night — they will be photographed — plus sunscreen and a hat for boat day. Towels and totes are on us.</p>
+        <a class="btn-pack" href="pack.html">See the packing moodboard →</a>
       </div>
       <div class="k reveal">
         <h3 class="serif">Who to call</h3>
@@ -1076,6 +1231,7 @@
       <img loading="lazy" decoding="async" class="foot-word-img" src="assets/brand/logo-ooo.png" alt="Nancy Out of Office">
       <div class="foot-r">
         <a href="about.html">About Nancy</a><br>
+        <a href="pack.html">What to pack</a><br>
         <a href="https://www.hellonancy.com" target="_blank" rel="noopener">www.hellonancy.com</a><br>
         <a href="https://instagram.com/hellonancy_official" target="_blank" rel="noopener">@hellonancy_official</a><br>
         <a href="mailto:crystal@hellonancy.com">crystal@hellonancy.com</a><br>

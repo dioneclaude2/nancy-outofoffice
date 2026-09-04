@@ -94,8 +94,8 @@
 
   /* RANGE */
   .range{background:var(--cream)}
-  .rangegrid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;margin-top:clamp(28px,3.4vw,42px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.rangegrid::-webkit-scrollbar{height:7px}.rangegrid::-webkit-scrollbar-track{background:transparent}.rangegrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
-  .pcard{flex:0 0 208px;scroll-snap-align:start;background:var(--cream-2);border-radius:10px;overflow:hidden}@media(max-width:560px){.pcard{flex:0 0 62vw}}
+  .rangegrid{display:flex;gap:clamp(10px,1.4vw,18px);margin-top:clamp(34px,4.2vw,54px);overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 18px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.rangegrid::-webkit-scrollbar{height:7px}.rangegrid::-webkit-scrollbar-track{background:transparent}.rangegrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
+  .pcard{flex:0 0 250px;scroll-snap-align:start;background:var(--cream-2);border-radius:10px;overflow:hidden}
   .pcard .imgwrap{aspect-ratio:1/1;overflow:hidden}
   .pcard img{width:100%;height:100%;object-fit:cover}
   .pcard .b{padding:14px 14px 18px}
@@ -116,13 +116,27 @@
 
   /* EXPERTS */
   .experts{background:var(--cream-2)}
-  .expgrid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x proximity;margin-top:clamp(28px,3.4vw,42px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.expgrid::-webkit-scrollbar{height:7px}.expgrid::-webkit-scrollbar-track{background:transparent}.expgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}.railhint{display:flex;align-items:center;gap:8px;margin-top:18px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}.railhint i{font-style:normal;font-size:14px}
-  .exp{flex:0 0 292px;scroll-snap-align:start;background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:22px 20px 20px;display:flex;flex-direction:column}.exp .q{flex:1}@media(max-width:560px){.exp{flex:0 0 80vw}}
-  .exp .nm{font-family:"Fraunces",serif;font-size:19px;font-weight:440;line-height:1.15}
-  .exp .rl{font-size:12.5px;color:var(--ink-soft);margin-top:6px;line-height:1.4}
-  .exp .q{font-size:13.5px;line-height:1.55;margin-top:14px;font-style:italic;color:var(--ink)}
-  .exp .hd{font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--pink);margin-top:14px;display:flex;justify-content:space-between;gap:10px;align-items:center}
-  .exp .fw{background:#d9f000;color:var(--ink);border-radius:100px;padding:3px 10px;font-weight:700;font-size:10.5px;letter-spacing:.06em;white-space:nowrap}
+  .expgrid{display:flex;gap:clamp(16px,2.2vw,24px);margin-top:clamp(34px,4.2vw,54px);overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 18px;scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent}.expgrid::-webkit-scrollbar{height:7px}.expgrid::-webkit-scrollbar-track{background:transparent}.expgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
+  .exp{flex:0 0 360px;scroll-snap-align:start;
+    background:#fff;border:1px solid var(--line);border-radius:24px;
+    padding:clamp(20px,2.2vw,26px);display:flex;flex-direction:column;gap:16px;
+  }
+  /* gradient ring around the portrait, as on hellonancy.com */
+  .exp-ring{
+    flex:0 0 auto;width:104px;height:104px;border-radius:100px;padding:3px;
+    background:linear-gradient(135deg,#FF30CC 55%,#FFAC30);display:block;
+  }
+  .exp-ring img{width:100%;height:100%;border-radius:100px;object-fit:cover;object-position:center top;display:block}
+  .exp-ring--tbd{display:flex;align-items:center;justify-content:center}
+  .exp-ini{
+    width:100%;height:100%;border-radius:100px;background:#fff;color:var(--pink);
+    display:flex;align-items:center;justify-content:center;font-size:26px;font-style:italic;
+  }
+  .exp-body{display:flex;flex-direction:column;gap:14px;height:100%;min-width:0}
+  .exp-q{font-size:14.5px;line-height:1.55;color:var(--ink)}
+  .exp-meta{margin-top:auto}
+  .exp-nm{font-family:"Fraunces",serif;font-size:19px;font-weight:440;line-height:1.15;color:var(--pink)}
+  .exp-rl{font-size:12.5px;color:var(--ink-soft);margin-top:6px;line-height:1.45}
 
   /* TRACK RECORD */
   .track{background:var(--cream)}
@@ -171,12 +185,7 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}
   .reveal.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-  .exp .ph{width:66px;height:66px;border-radius:50%;overflow:hidden;background:var(--cream-2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-  .exp .ph img{width:100%;height:100%;object-fit:cover;display:block}
-  .exp .initials{font-family:"Fraunces",serif;font-size:17px;color:#9b8a85;font-weight:600;letter-spacing:.04em}
-  .pcard .imgwrap.tbd{display:flex;align-items:center;justify-content:center;background:#f3ece9;min-height:150px}
-  .pcard .imgwrap.tbd span{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#9b8a85;font-weight:700;text-align:center;padding:0 10px}
-</style>
+.railhint{display:flex;align-items:center;gap:8px;margin-top:14px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}.railhint i{font-style:normal;font-size:14px}@media(max-width:640px){.expgrid>*{flex:0 0 82vw}}@media(max-width:640px){.rangegrid>*{flex:0 0 64vw}}</style>
 </head>
 <body>
 
@@ -270,15 +279,15 @@
       <div class="pcard"><div class="imgwrap"><img src="assets/products/lolly.jpg" alt="Lolly" loading="lazy"></div><div class="b"><div class="nm serif">Lolly</div><div class="ds">Mini wand, travel-ready.</div></div></div>
       <div class="pcard"><div class="imgwrap"><img src="assets/products/pixie.jpg" alt="Pixie" loading="lazy"></div><div class="b"><div class="nm serif">Pixie</div><div class="ds">Remote-control panty vibe.</div></div></div>
       <div class="pcard"><div class="imgwrap"><img src="assets/products/justuno.jpg" alt="Just Uno" loading="lazy"></div><div class="b"><div class="nm serif">Just Uno</div><div class="ds">One-button, beginner-first.</div></div></div>
-      <div class="pcard"><div class="imgwrap"><img src="assets/products/ace.jpg" alt="Ace" loading="lazy"></div><div class="b"><div class="nm serif">Ace</div><div class="ds">Air-suction, Center Court collection.</div></div></div>
-      <div class="pcard"><div class="imgwrap"><img src="assets/products/smash.jpg" alt="Smash" loading="lazy"></div><div class="b"><div class="nm serif">Smash</div><div class="ds">Wand with a tennis-ball head.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/ace.jpg" alt="ACE air-suction massager" loading="lazy"></div><div class="b"><div class="nm serif">Ace</div><div class="ds">Tennis-ball air suction. Centercourt.</div></div></div>
+      <div class="pcard"><div class="imgwrap"><img src="assets/products/smash.jpg" alt="SMASH wand vibrator" loading="lazy"></div><div class="b"><div class="nm serif">Smash</div><div class="ds">Wand vibrator with a ball head.</div></div></div>
     </div>
     <div class="railhint reveal"><i>&rarr;</i> Scroll for the full range</div>
     <div class="specs reveal">
       <span>Medical-grade silicone</span>
       <span>Waterproof</span>
       <span>Whisper-quiet</span>
-      <span>Discreet, fruit-shaped design</span>
+      <span>Discreet, playful design</span>
     </div>
   </div>
 </section>
@@ -314,91 +323,137 @@
     </div>
     <div class="expgrid">
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/dr-angela.jpg" alt="Dr Angela Wright" loading="lazy"></div>
-        <div class="nm serif">Dr Angela Wright</div>
-        <div class="rl">GP, Clinical Sexologist</div>
-        <div class="q">"As a doctor who focuses on sexual health, I frequently recommend the Lem as a high quality, beginner friendly suction toy."</div>
-        <div class="hd"><span>@spicedpeardrwright</span><span class="fw">2.07k</span></div>
+        <span class="exp-ring"><img src="assets/experts/dr-angela-wright.jpg" alt="Dr. Angela Wright" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“As a doctor who focuses on sexual health, I frequently recommend the Lem as a high quality, beginner friendly suction toy. It’s particularly useful for women who sometimes find they become less responsive to vibration after menopause or cancer.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Dr. Angela Wright</div>
+            <div class="exp-rl">GP, Clinical Sexologist, and BMS Registered Menopause Specialist</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/dr-jila.jpg" alt="Dr Jila Senemar" loading="lazy"></div>
-        <div class="nm serif">Dr Jila Senemar</div>
-        <div class="rl">Board-certified OB-GYN, FACOG &middot; Founder of JilaMD &amp; the Miami Menopause Collective</div>
-        <div class="q">On the panel in Playa del Carmen.</div>
-        <div class="hd"><span>@drjilasenemar</span></div>
+        <span class="exp-ring"><img src="assets/experts/dr-jila-senemar.jpg" alt="Dr. Jila Senemar" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“If intimacy has become uncomfortable or something you avoid, know this: it's one of the most common things I see in my practice, and one of the most treatable. That's exactly why I recommend Lem to my patients and every woman who needs a little help. 🍋”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Dr. Jila Senemar</div>
+            <div class="exp-rl">MD, FACOG, MSCP</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/dr-tara.jpg" alt="Dr Tara Suwinyattichaiporn" loading="lazy"></div>
-        <div class="nm serif">Dr Tara Suwinyattichaiporn</div>
-        <div class="rl">Sex &amp; Relationship Expert</div>
-        <div class="q">"I'm all about high-quality products with good design, so of course I have Lem in my go-to drawer!"</div>
-        <div class="hd"><span>@luvbites.co</span><span class="fw">247k</span></div>
+        <span class="exp-ring"><img src="assets/experts/dr-tara.jpg" alt="Dr. Tara" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Lem is one of my favorite pleasure tools out there. I'm all about high-quality products with good design, so of course I have Lem in my go-to drawer!”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Dr. Tara</div>
+            <div class="exp-rl">Sex &amp; Relationship Expert, Professor, and Host of Luvbites Podcast</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/danielle.jpg" alt="Danielle Bezalel" loading="lazy"></div>
-        <div class="nm serif">Danielle Bezalel</div>
-        <div class="rl">Creator, producer and host of Sex Ed with DB Podcast</div>
-        <div class="q">A recommending expert and advisor for Hello Nancy products.</div>
-        <div class="hd"><span>@sexedwithdbpodcast</span><span class="fw">33.6k</span></div>
+        <span class="exp-ring"><img src="assets/experts/danielle-bezalel.jpg" alt="Danielle Bezalel" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Lem helps take the pressure out of pleasure, which is often exactly what people need to actually enjoy it.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Danielle Bezalel</div>
+            <div class="exp-rl">Creator, Producer and Host of Sex Ed with DB Podcast</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/sara.jpg" alt="Sara Tang" loading="lazy"></div>
-        <div class="nm serif">Sara Tang</div>
-        <div class="rl">Certified Sexologist &amp; Coach</div>
-        <div class="q">"Nancy's mission resonates deeply with me, as we share a common goal of bringing comprehensive sexual wellness education to Asia and beyond."</div>
-        <div class="hd"><span>@hellosarasense</span><span class="fw">15.5k</span></div>
+        <span class="exp-ring"><img src="assets/experts/dr-mari-mitrani.jpg" alt="Dr. Mari Mitrani" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Nothing speaks louder to women's health than a company that understands that women need to feel comfortable in their own skin and explore their pleasure.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Dr. Mari Mitrani</div>
+            <div class="exp-rl">MD, PhD</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/georgie.jpg" alt="Georgie Culley" loading="lazy"></div>
-        <div class="nm serif">Georgie Culley</div>
-        <div class="rl">The Sun's Resident Sexpert, award-winning journalist</div>
-        <div class="q">"It's also super quiet, and you can get multiple orgasms in one session from this little guy."</div>
-        <div class="hd"><span>@sunsexpert</span><span class="fw">110k</span></div>
+        <span class="exp-ring"><img src="assets/experts/luci-lampe.jpg" alt="Luci Lampe" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“From delivery of the package to my O with the Lemon, it's clear Hello Nancy created something thoughtful, playful, and shame-free.The mystery gift, the colors, the packaging, the product itself, all so inviting. I can tell this is going to be a very satisfying journey.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Luci Lampe</div>
+            <div class="exp-rl">Trauma-Informed Intimacy Coach, 4× Author, and Host of The Liberated Feminine</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/lucil.jpg" alt="Lucil Ampe" loading="lazy"></div>
-        <div class="nm serif">Lucil Ampe</div>
-        <div class="rl">Intimacy Coach &amp; Author</div>
-        <div class="q">"From delivery of the package to my O with the Lemon, it's clear Hello Nancy created something thoughtful, playful, and shame-free."</div>
-        <div class="hd"><span>@lucilampe</span><span class="fw">109k</span></div>
+        <span class="exp-ring"><img src="assets/experts/sara-tang.jpg" alt="Sara Tang" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“I feel truly aligned with Nancy’s mission of breaking taboos, encouraging open conversations about pleasure, and creating a safe, shame-free space to explore sexuality. They bring this to life in a way that feels both fun and empowering. The products are thoughtfully designed, well-researched, and genuinely playful.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Sara Tang</div>
+            <div class="exp-rl">Certified Sexologist and Relationship Coach, Founder of Sarasense</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/annette.jpg" alt="Annette Benedetti" loading="lazy"></div>
-        <div class="nm serif">Annette Benedetti</div>
-        <div class="rl">Sex and Intimacy Coach</div>
-        <div class="q">"She understood the assignment."</div>
-        <div class="hd"><span>@annettebenedetti</span><span class="fw">18.8k</span></div>
+        <span class="exp-ring"><img src="assets/experts/maaike-steinebach.jpg" alt="Maaike Steinebach" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Pleasure isn’t something you earn, it’s something you deserve. Every woman should feel confident exploring what feels good, without shame. Share that confidence... give to your partner or friends, and gain more joy, connection, and happiness together.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Maaike Steinebach</div>
+            <div class="exp-rl">Founder of Femtech Future, Women’s Health &amp; Femtech Advocate</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/dr-tessa.jpg" alt="Dr Tessa Fox-Kulakowski" loading="lazy"></div>
-        <div class="nm serif">Dr Tessa Fox-Kulakowski</div>
-        <div class="rl">Licensed Clinical Social Worker, PhD in Human Sexuality Studies</div>
-        <div class="q">"Love, love, love in fruit form!"</div>
-        <div class="hd"><span>@thesmuttytherapist</span><span class="fw">4,248</span></div>
+        <span class="exp-ring"><img src="assets/experts/dr-tessa.jpg" alt="Dr. Tessa" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Nancy provides toys that look adorable on your nightstand while packing a powerful, direct clitoral punch... in the BEST way! Precise, consistent clitoral stimulation in cute, discreet packaging. Love, love, love in fruit form!”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Dr. Tessa</div>
+            <div class="exp-rl">Licensed Clinical Social Worker, PhD in Human Sexuality Studies</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/karen.jpg" alt="Karen Bigman" loading="lazy"></div>
-        <div class="nm serif">Karen Bigman</div>
-        <div class="rl">Certified Sexuality Educator &amp; Menopause Coach</div>
-        <div class="q">"I love Lem because it's not a jackhammer shaking up the whole bed, and it's so easy and lightweight that nobody even has to know it's there if you don't want them to."</div>
-        <div class="hd"><span>@taboototruth</span><span class="fw">3.14k</span></div>
+        <span class="exp-ring"><img src="assets/experts/hayley-hoffman.jpg" alt="Hayley Hoffman" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Nancy is a brilliant approach to making sexy easy and accessible. The products are highly curated to bring the best of good sensation to couples for shared play or individual pleasure.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Hayley Hoffman</div>
+            <div class="exp-rl">Certified Imago Relationship Therapist, Advanced Clinician, Getting the Love YouWant Workshop Presenter, Polyvagal Informed Therapist, Certified Safe and Sound Protocol</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/maaike.jpg" alt="Maaike Steinebach" loading="lazy"></div>
-        <div class="nm serif">Maaike Steinebach</div>
-        <div class="rl">Founder &amp; CEO, FemTech Future Limited</div>
-        <div class="q">A member of the "Nancy Collective", who joined the team to pursue her passion for female sexual health.</div>
-        <div class="hd"><span>@maaikeloveshk</span><span class="fw">2,503</span></div>
+        <span class="exp-ring"><img src="assets/experts/georgie-culley.jpg" alt="Georgie Culley" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Designed with beginners in mind, the discreet clitoral massager boasts 12 pulse patterns and intensities, delivering longer, stronger and mind-blowing orgasms.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Georgie Culley</div>
+            <div class="exp-rl">The Sun's Resident Sexpert, Award-Winning Journalist</div>
+          </div>
+        </div>
       </div>
       <div class="exp reveal">
-        <div class="ph"><img src="assets/brand/hayley.jpg" alt="Hayley Hoffman" loading="lazy"></div>
-        <div class="nm serif">Hayley Hoffman</div>
-        <div class="rl">Certified Imago Relationship Therapist, LPC</div>
-        <div class="q">"The products are highly curated to bring the best of good sensation to couples for shared play or individual pleasure."</div>
-        <div class="hd"><span>@youareamazing.us</span><span class="fw">620</span></div>
+        <span class="exp-ring exp-ring--tbd"><span class="exp-ini serif">KB</span></span>
+        <div class="exp-body">
+          <p class="exp-q">“I love Lem because it’s not a jackhammer shaking up the whole bed, and it’s so easy and lightweight that nobody even has to know it’s there if you don’t want them to.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Karen Bigman</div>
+            <div class="exp-rl">Certified Sex Educator, Certified Menopause Coach, Creator of Taboo to Truth: Life &amp; Sex After 50</div>
+          </div>
+        </div>
+      </div>
+      <div class="exp reveal">
+        <span class="exp-ring"><img src="assets/experts/annette-benedetti.jpg" alt="Annette Benedetti" loading="lazy" decoding="async"></span>
+        <div class="exp-body">
+          <p class="exp-q">“Lem is small, quiet, and looks completely innocent… Simple controls, no chaos, no mixed signals. She’s not trying to impress you, she just shows up and delivers. She understood the assignment.”</p>
+          <div class="exp-meta">
+            <div class="exp-nm">Annette Benedetti</div>
+            <div class="exp-rl">Sex and Intimacy Coach, Podcast Host of Talk Sex with Annette</div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="railhint reveal"><i>&rarr;</i> Scroll for all 12</div>
+    <div class="railhint reveal"><i>&rarr;</i> Scroll for all the experts</div>
   </div>
 </section>
 
