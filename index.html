@@ -528,17 +528,17 @@
   .panel-grid .ph{background:#fff}
 
   /* ---- one rail system: every card row behaves and measures the same ---- */
-  .ppl-grid,.prodgrid{
+  .prodgrid{
     display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x proximity;
     padding:2px 2px 18px;margin-top:clamp(32px,4vw,48px);max-width:none;
     scrollbar-width:thin;scrollbar-color:rgba(31,18,22,.22) transparent;
     grid-template-columns:none;
   }
-  .ppl-grid::-webkit-scrollbar,.prodgrid::-webkit-scrollbar{height:7px}
-  .ppl-grid::-webkit-scrollbar-track,.prodgrid::-webkit-scrollbar-track{background:transparent}
-  .ppl-grid::-webkit-scrollbar-thumb,.prodgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
-  .ppl-grid>*,.prodgrid>*{flex:0 0 250px;scroll-snap-align:start}
-  @media(max-width:560px){.ppl-grid>*,.prodgrid>*{flex:0 0 76vw}}
+  .prodgrid::-webkit-scrollbar{height:7px}
+  .prodgrid::-webkit-scrollbar-track{background:transparent}
+  .prodgrid::-webkit-scrollbar-thumb{background:rgba(31,18,22,.2);border-radius:99px}
+  .prodgrid>*{flex:0 0 250px;scroll-snap-align:start}
+  @media(max-width:560px){.prodgrid>*{flex:0 0 76vw}}
 
   /* .know .k a sets pink text — outrank it or the label vanishes on the pink pill */ .know .k a.btn-pack{ display:inline-flex;align-items:center;gap:8px;margin-top:18px; color:#fff;border-bottom:0; font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.14em; text-transform:uppercase;font-weight:500;text-decoration:none; background:var(--pink);padding:12px 20px;border-radius:100px; transition:transform .2s ease, background .2s ease; }
   .know .k a.btn-pack:hover{transform:translateY(-2px);background:var(--pink-deep);color:#fff}
@@ -553,6 +553,10 @@
   .panel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,20px);margin-top:0;max-width:none;overflow:visible}
   @media(min-width:900px){.panel .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(34px,5vw,72px);align-items:center}.panel-copy{align-self:center}}
   @media(max-width:560px){.panel-grid{grid-template-columns:1fr}}
+
+  .ppl-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,1.6vw,20px);margin-top:clamp(32px,4vw,48px);overflow:visible;max-width:none}
+  @media(max-width:900px){.ppl-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:560px){.ppl-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -1124,7 +1128,7 @@
         <div class="hd"><a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a></div>
       </div>
     </div>
-    <div class="railhint reveal"><i>&rarr;</i> Scroll for the whole team</div>
+    
 
     
 
