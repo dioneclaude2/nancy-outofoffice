@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What to Pack — Nancy Out of Office</title>
+<meta name="description" content="What to pack for Nancy Out of Office, Playa del Carmen. Bright, colourful, tropical — bring your cutest summer outfits." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#ec2f8e; --pink-2:#ff5fae; --pink-deep:#b8125f; --pink-soft:#ffd9ec;
+    --yellow:#ffd42e; --yellow-soft:#ffe873; --butter:#f8e6a0;
+    --cream:#faf3e6; --cream-2:#f4e9d6; --ink:#1f1216; --ink-soft:#5e4b52;
+    --line:rgba(31,18,22,.14);
+    --grad:linear-gradient(100deg,var(--pink) 0%,#f7457e 45%,#ff8a3d 100%);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+  .serif{font-family:"Fraunces",Georgia,serif}
+  .kicker{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+  a{color:inherit} img{display:block;max-width:100%}
+  section{padding:clamp(52px,7vw,104px) 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--pink);margin-bottom:clamp(18px,2.4vw,30px)}
+  .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;display:inline-block}
+
+  /* HERO */
+  .phero{background:var(--grad);color:#fff;min-height:66svh;display:flex;flex-direction:column}
+  .phero__top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:clamp(22px,3.4vw,38px)}
+  .wordmark-img{width:clamp(120px,15vw,190px);height:auto}
+  .navlink{
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    text-decoration:none;color:var(--ink);background:#fff;padding:9px 15px;border-radius:100px;
+    white-space:nowrap;font-weight:500;transition:transform .2s ease;
+  }
+  .navlink:hover{transform:translateY(-2px)}
+  .phero__center{flex:1;display:flex;flex-direction:column;justify-content:center;padding:clamp(38px,6vw,72px) 0 clamp(30px,4vw,54px)}
+  .phero h1{font-family:"Fraunces",serif;font-weight:340;line-height:.95;letter-spacing:-.02em;font-size:clamp(46px,10vw,132px);color:#fff}
+  .phero h1 em{font-style:italic;color:var(--yellow)}
+  .phero__sub{margin-top:clamp(18px,2.4vw,28px);font-size:clamp(16px,1.7vw,21px);line-height:1.45;max-width:46ch;color:rgba(255,255,255,.96)}
+
+  /* RULES */
+  .rules{background:var(--butter);color:var(--pink-deep)}
+  .rules .eyebrow{color:var(--pink)}
+  .rules h2{font-family:"Fraunces",serif;font-weight:360;letter-spacing:-.02em;line-height:1;font-size:clamp(34px,6vw,76px);color:var(--pink)}
+  .rules h2 em{font-style:italic}
+  .ruleline{margin-top:clamp(22px,2.6vw,32px);font-size:clamp(16px,1.6vw,20px);line-height:1.55;max-width:54ch}
+  .swatches{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(30px,3.6vw,44px)}
+  .sw{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.6);border:1px solid rgba(196,0,110,.2);
+      padding:8px 15px 8px 8px;border-radius:100px;font-family:"JetBrains Mono",monospace;font-size:11.5px;
+      letter-spacing:.1em;text-transform:uppercase;color:var(--pink-deep)}
+  .sw i{width:22px;height:22px;border-radius:100px;display:block}
+  .yesno{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,28px);margin-top:clamp(34px,4vw,52px)}
+  .yn{background:#fff;border-radius:18px;padding:clamp(20px,2.4vw,28px);border:1px solid rgba(196,0,110,.16)}
+  .yn h3{font-family:"Fraunces",serif;font-size:clamp(22px,2.4vw,30px);font-weight:420;color:var(--pink)}
+  .yn ul{list-style:none;margin-top:14px}
+  .yn li{font-size:15px;line-height:1.5;padding:7px 0 7px 24px;position:relative;color:var(--ink)}
+  .yn li::before{position:absolute;left:0;top:7px;font-size:14px}
+  .yn--do li::before{content:"✓";color:var(--pink)}
+  .yn--dont li::before{content:"✗";color:rgba(31,18,22,.35)}
+
+  /* MOODBOARD */
+  .board{background:var(--cream)}
+  .masonry{columns:4;column-gap:clamp(12px,1.6vw,20px);margin-top:clamp(34px,4.2vw,54px)}
+  .pin{
+    break-inside:avoid;margin:0 0 clamp(12px,1.6vw,20px);
+    border-radius:16px;overflow:hidden;background:var(--cream-2);
+    position:relative;transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .pin:hover{transform:translateY(-4px);box-shadow:0 26px 46px -30px rgba(184,18,95,.5)}
+  .pin img{width:100%;height:auto;display:block}
+  .pin .cap{
+    position:absolute;left:10px;bottom:10px;right:10px;
+    font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink);background:rgba(255,255,255,.92);padding:8px 12px;border-radius:100px;
+    backdrop-filter:blur(4px);
+  }
+  .pin--note{background:var(--pink);color:#fff;padding:clamp(22px,2.6vw,30px)}
+  .pin--note p{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(20px,2.2vw,27px);line-height:1.2}
+  .pin--note--y{background:var(--yellow);color:var(--ink)}
+
+  /* CHECKLIST */
+  .list{background:var(--pink-soft)}
+  .list .eyebrow{color:var(--pink-deep)}
+  .list h2{font-family:"Fraunces",serif;font-weight:360;letter-spacing:-.02em;line-height:1;font-size:clamp(34px,6vw,76px)}
+  .list h2 em{font-style:italic;color:var(--pink-deep)}
+  .packgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,30px);margin-top:clamp(34px,4.2vw,54px)}
+  .pk h3{font-family:"Fraunces",serif;font-size:clamp(20px,2vw,25px);font-weight:440;border-bottom:1px solid rgba(184,18,95,.3);padding-bottom:10px}
+  .pk ul{list-style:none;margin-top:12px}
+  .pk li{font-size:14.5px;line-height:1.5;padding:6px 0;color:rgba(31,18,22,.82)}
+
+  /* CTA */
+  .cta{background:var(--grad);color:#fff;text-align:center}
+  .cta h2{font-family:"Fraunces",serif;font-weight:360;font-size:clamp(30px,5vw,66px);line-height:1.04;letter-spacing:-.02em;max-width:20ch;margin:0 auto}
+  .cta .sub{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(18px,2.2vw,27px);margin-top:clamp(20px,2.4vw,30px);color:var(--yellow)}
+  .ctabtns{margin-top:clamp(30px,3.6vw,44px);display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .btn{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+       text-decoration:none;padding:15px 26px;border-radius:100px;font-weight:500;transition:transform .2s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn--solid{background:#fff;color:var(--ink)}
+  .btn--ghost{border:1px solid rgba(255,255,255,.6);color:#fff}
+
+  footer{background:var(--ink);color:var(--cream);padding:clamp(48px,6vw,88px) 0 clamp(32px,4vw,52px)}
+  .foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px}
+  .foot-word-img{width:clamp(170px,28vw,340px);height:auto}
+  .foot-r{text-align:right;font-family:"JetBrains Mono",monospace;font-size:13px;letter-spacing:.08em;line-height:2}
+  .foot-r a{color:var(--yellow);text-decoration:none}
+  .foot-bot{margin-top:clamp(32px,4vw,52px);padding-top:22px;border-top:1px solid rgba(250,243,230,.18);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,243,230,.55)}
+
+  @media(max-width:1000px){ .masonry{columns:3} .packgrid{grid-template-columns:repeat(2,1fr)} }
+  @media(max-width:700px){ .masonry{columns:2} .yesno{grid-template-columns:1fr} .foot-r{text-align:left} }
+  @media(max-width:460px){ .masonry{columns:1} .packgrid{grid-template-columns:1fr} }
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header class="phero">
+  <div class="wrap" style="display:flex;flex-direction:column;flex:1">
+    <div class="phero__top">
+      <img class="wordmark-img" src="assets/brand/logo-ooo.png" alt="Nancy Out of Office">
+      <a class="navlink" href="index.html">← Back to the trip</a>
+    </div>
+    <div class="phero__center">
+      <p class="kicker" style="opacity:.9;margin-bottom:20px">What to pack</p>
+      <h1 class="serif">Bring your <em>brightest.</em></h1>
+      <p class="phero__sub">Nancy is fun, colourful and as bright as possible — and so is this trip. Pack your cutest, most colourful summer outfits. Think tropical, think holiday, think joy.</p>
+    </div>
+  </div>
+</header>
+
+<section class="rules">
+  <div class="wrap">
+    <span class="kicker eyebrow">The only rule</span>
+    <h2 class="serif">Colour. And then <em>more colour.</em></h2>
+    <p class="ruleline">White and beige are welcome — just give them something loud to sit next to. Pink and yellow are the house colours, so wear them if you've got them. And bling is <em>always</em> welcome.</p>
+    <div class="swatches">
+      <span class="sw"><i style="background:#ec2f8e"></i>Nancy pink</span>
+      <span class="sw"><i style="background:#ffd42e"></i>Marigold</span>
+      <span class="sw"><i style="background:#ff8a3d"></i>Coral</span>
+      <span class="sw"><i style="background:#5ad1c8"></i>Turquoise</span>
+      <span class="sw"><i style="background:#d8f34a"></i>Lime</span>
+      <span class="sw"><i style="background:#faf3e6;border:1px solid rgba(0,0,0,.12)"></i>Cream</span>
+    </div>
+    <div class="yesno">
+      <div class="yn yn--do reveal">
+        <h3 class="serif">Yes please</h3>
+        <ul>
+          <li>Bright, saturated colour — the louder the better</li>
+          <li>Pink and yellow, our house colours</li>
+          <li>Bling: gold, pearls, crystals, stacked and shiny</li>
+          <li>Bikinis and swimwear — you'll live in them</li>
+          <li>Cute pyjamas for movie night</li>
+          <li>White and beige, styled with colour pops</li>
+          <li>Prints, florals, stripes, crochet, sequins</li>
+        </ul>
+      </div>
+      <div class="yn yn--dont reveal">
+        <h3 class="serif">Maybe leave it</h3>
+        <ul>
+          <li>All-black outfits</li>
+          <li>Anything dark, moody or muted</li>
+          <li>Heavy fabrics — it's hot and humid</li>
+          <li>Head-to-toe neutral with nothing bright</li>
+          <li>Heels for the beach or the boat</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="board">
+  <div class="wrap">
+    <span class="kicker eyebrow">The moodboard</span>
+    <h2 class="serif" style="font-family:'Fraunces',serif;font-weight:360;letter-spacing:-.02em;line-height:1;font-size:clamp(34px,6vw,76px)">The <em style="font-style:italic;color:var(--pink)">vibe.</em></h2>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<section class="list">
+  <div class="wrap">
+    <span class="kicker eyebrow">The checklist</span>
+    <h2 class="serif">Four days, <em>packed.</em></h2>
+    <div class="packgrid">
+      <div class="pk reveal">
+        <h3 class="serif">Pool &amp; beach</h3>
+        <ul>
+          <li>Bikinis &amp; swimsuits (bring several)</li>
+          <li>Kaftan or crochet cover-up</li>
+          <li>Straw hat &amp; sunglasses</li>
+          <li>Sandals or slides</li>
+          <li>Reef-safe sunscreen</li>
+        </ul>
+      </div>
+      <div class="pk reveal">
+        <h3 class="serif">Boat day</h3>
+        <ul>
+          <li>Swimwear you can move in</li>
+          <li>Sarong or light cover-up</li>
+          <li>A hat that won't blow away</li>
+          <li>Flat shoes — no heels on deck</li>
+          <li>A change of clothes</li>
+        </ul>
+      </div>
+      <div class="pk reveal">
+        <h3 class="serif">Dinners</h3>
+        <ul>
+          <li>Colourful maxi or sundress</li>
+          <li>A co-ord set or two</li>
+          <li>Your best bling</li>
+          <li>Something for golden hour photos</li>
+          <li>A light layer for the evening</li>
+        </ul>
+      </div>
+      <div class="pk reveal">
+        <h3 class="serif">Movie night</h3>
+        <ul>
+          <li>Your cutest pyjamas</li>
+          <li>Bonus points for matching sets</li>
+          <li>Pastels, prints or silk</li>
+          <li>Fluffy slides or socks</li>
+          <li>It's going on camera — make it cute</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="serif">Pack bright. Pack cute. Pack for the photos.</h2>
+    <p class="sub serif">See you in Playa del Carmen.</p>
+    <div class="ctabtns">
+      <a class="btn btn--solid" href="index.html">← Back to the trip</a>
+      <a class="btn btn--ghost" href="about.html">About Nancy ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <img loading="lazy" class="foot-word-img" src="assets/brand/logo-ooo.png" alt="Nancy Out of Office">
+      <div class="foot-r">
+        <a href="index.html">Nancy OOO · Playa del Carmen</a><br>
+        <a href="mailto:crystal@hellonancy.com">crystal@hellonancy.com</a><br>
+        <a href="mailto:brittany@hellonancy.com">brittany@hellonancy.com</a><br>
+        9–12 Sept 2026
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>#NancyOOO · #OutOfOffice · #PleasureIsWellness</span>
+      <span>© Nancy — Break taboo. Embrace pleasure.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const PINS = [
+    {src:'assets/pack/01.jpg', cap:'Hot pink + gold'},
+    {src:'assets/pack/02.jpg', cap:'Crochet cover-up'},
+    {note:'White and beige are fine — just add something loud.', y:false},
+    {src:'assets/pack/03.jpg', cap:'Golden hour kaftan'},
+    {src:'assets/pack/04.jpg', cap:'Pack the accessories'},
+    {src:'assets/pack/05.jpg', cap:'Movie night PJs'},
+    {src:'assets/pack/06.jpg', cap:'Boat day'},
+    {note:'Bling is always welcome.', y:true},
+    {src:'assets/pack/07.jpg', cap:'Stack the gold'},
+    {src:'assets/pack/08.jpg', cap:'White + pink pops'},
+    {src:'assets/pack/09.jpg', cap:'Lime &amp; pink co-ord'},
+    {src:'assets/pack/10.jpg', cap:'Silk butter yellow'},
+    {note:'No black. Not one outfit.', y:false},
+    {src:'assets/pack/11.jpg', cap:'Bring several'},
+    {src:'assets/pack/12.jpg', cap:'Straw hat energy'}
+  ];
+  const m=document.getElementById('masonry');
+  PINS.forEach(p=>{
+    const d=document.createElement('div');
+    d.className='pin reveal'+(p.note?(' pin--note'+(p.y?' pin--note--y':'')):'');
+    d.innerHTML = p.note
+      ? '<p class="serif">'+p.note+'</p>'
+      : '<img src="'+p.src+'" alt="'+p.cap.replace(/&amp;/g,'&')+'" loading="lazy" decoding="async" onerror="this.closest(\'.pin\').remove()"><span class="cap">'+p.cap+'</span>';
+    m.appendChild(d);
+  });
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
