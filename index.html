@@ -484,6 +484,29 @@
   .grouplabel{margin:56px 0 10px}
   .draftnote{margin-top:24px;padding:14px 16px;border:1px dashed #c9a9b4;border-radius:10px;font-size:13px;line-height:1.7;color:#7a6b6d}
   .draftnote b{color:#b3466f}
+  .direction{background:var(--pink-soft);color:var(--ink)}
+  .direction .eyebrow{ color:var(--pink-deep); font-size:clamp(14px,1.5vw,18px);letter-spacing:.2em;font-weight:700; margin-bottom:clamp(18px,2.2vw,28px); }
+  .direction .eyebrow::before{width:46px}
+  .direction .lede{ font-family:"Fraunces",serif;font-weight:340;font-style:italic; font-size:clamp(22px,3vw,40px);line-height:1.18;letter-spacing:-.01em; color:var(--pink-deep);max-width:22ch;margin-top:clamp(20px,2.4vw,30px); }
+  .dirgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(44px,5.4vw,76px)}
+  .dir{border-top:2px solid rgba(184,18,95,.32);padding-top:18px}
+  .dir .n{ font-family:"Fraunces",serif;font-size:clamp(38px,5vw,62px);font-weight:420; line-height:1;color:var(--pink);opacity:.55; }
+  .dir h3{font-family:"Fraunces",serif;font-weight:420;font-size:clamp(23px,2.5vw,32px);line-height:1.08;margin-top:10px}
+  .dir p{font-size:15.5px;line-height:1.55;color:rgba(31,18,22,.8);margin-top:12px;max-width:32ch}
+  .reveal-band{ margin-top:clamp(44px,5.4vw,76px);background:var(--ink);color:var(--cream); border-radius:22px;overflow:hidden; display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:clamp(24px,3vw,44px); padding:clamp(28px,3.4vw,48px); }
+  .rb-lab{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--yellow)}
+  .rb-line{ font-family:"Fraunces",serif;font-weight:360;font-size:clamp(26px,4vw,54px); line-height:1.06;letter-spacing:-.02em;margin-top:14px; }
+  .rb-line em{font-style:italic;color:var(--yellow)}
+  .rb-sub{font-size:15px;line-height:1.55;color:rgba(250,243,230,.8);margin-top:16px;max-width:46ch}
+  .rb-img{width:100%;border-radius:16px;aspect-ratio:1/1;object-fit:cover}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .chips span{ font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em; padding:7px 13px;border-radius:100px; border:1px solid rgba(250,243,230,.34);color:rgba(250,243,230,.9); }
+  .chips--on span{border-color:rgba(255,255,255,.45);color:#fff}
+  .chips--dk span{border-color:rgba(31,18,22,.3);color:rgba(31,18,22,.82)}
+  .pillars-head{margin-top:clamp(52px,6.4vw,88px);border-top:1px solid rgba(184,18,95,.28);padding-top:clamp(32px,3.8vw,48px)}
+  .pillars-head h3{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(28px,4vw,52px);letter-spacing:-.02em;line-height:1}
+  .pillars-head h3 em{font-style:italic;color:var(--pink-deep)}
+  .pillars-head p{margin-top:12px;font-size:15.5px;line-height:1.55;color:rgba(31,18,22,.78);max-width:48ch}
   .pillargrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.8vw,22px);margin-top:clamp(28px,3.4vw,42px)}
   .pillar{border-radius:20px;padding:clamp(20px,2.2vw,26px);display:flex;flex-direction:column}
   .pillar--p{background:var(--pink);color:#fff}
@@ -492,8 +515,17 @@
   .pillar .emo{font-size:26px;margin-top:12px;line-height:1}
   .pillar h4{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(21px,2.2vw,27px);line-height:1.1;margin-top:8px}
   .pillar p{font-size:14px;line-height:1.5;margin-top:10px;opacity:.94}
-  @media(max-width:1000px){.pillargrid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.pillargrid{grid-template-columns:1fr}}
+  .pillar .eg{ margin-top:14px;padding:13px 15px;border-radius:12px; font-family:"Fraunces",serif;font-style:italic;font-size:13.5px;line-height:1.4; }
+  .pillar .eg .lab{ display:block;font-family:"JetBrains Mono",monospace;font-style:normal; font-size:10px;letter-spacing:.16em;text-transform:uppercase; opacity:.75;margin-bottom:7px;font-weight:700; }
+  .pillar--p .eg{background:rgba(255,255,255,.17)}
+  .pillar--y .eg{background:rgba(31,18,22,.09)}
+  .pillar .chips{margin-top:auto;padding-top:18px}
+  .panel{background:var(--pink-soft);color:var(--ink)}
+  .panel .eyebrow{color:var(--pink-deep)}
+  .panel h2.big em{color:var(--pink-deep)}
+  .panel-sub{margin-top:20px;font-size:clamp(15px,1.3vw,18px);line-height:1.6;color:rgba(31,18,22,.78);max-width:54ch}
+  .panel-grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:760px;gap:clamp(18px,2.5vw,32px);margin-top:clamp(40px,5vw,64px)}
+  .panel-grid .ph{background:#fff}}
 </style>
 </head>
 <body>
@@ -855,19 +887,78 @@
   </div>
 </section>
 
-<section class="products" id="direction">
+<section class="direction" id="direction">
   <div class="wrap">
-    <div class="prodhead">
-      <div class="reveal">
-        <span class="kicker eyebrow">Content direction</span>
-        <h2 class="big serif">What we want people to <em>walk away with.</em></h2>
+    <span class="kicker eyebrow">Content direction &amp; desired message</span>
+    <h2 class="big serif">Out of office. <em>On your own terms.</em></h2>
+    <p class="lede">The topic nobody talks about — turned into the trip everybody will.</p>
+
+    <div class="dirgrid">
+      <div class="dir reveal">
+        <div class="n">01</div>
+        <h3 class="serif">You come first.</h3>
+        <p>Pampering, unhurried, unapologetic. Four days where the only thing on the schedule is whatever you actually feel like doing.</p>
       </div>
-      <p class="lead reveal">Four messages. If a post lands one of them, it is doing its job.</p>
+      <div class="dir reveal">
+        <div class="n">02</div>
+        <h3 class="serif">Properly switched off.</h3>
+        <p>Slow mornings, long lunches, sun on your skin. Nothing on the agenda you can't skip, and nobody keeping score.</p>
+      </div>
+      <div class="dir reveal">
+        <div class="n">03</div>
+        <h3 class="serif">Then have fun with it.</h3>
+        <p>Nancy travels because it doesn't look like what it is. It photographs like an object, not a taboo — which is exactly why people share it.</p>
+      </div>
     </div>
-    <div class="pillargrid reveal"><div class="pillar pillar--p"><span class="pn">MESSAGE 01</span><span class="emo">🌿</span><h4>Pleasure is wellness.</h4><p>Not a guilty extra. Treat it the way you would sleep, food or movement.</p></div><div class="pillar pillar--y"><span class="pn">MESSAGE 02</span><span class="emo">🍋</span><h4>Cute enough to leave out.</h4><p>Design you would happily have on the nightstand. Nothing to hide in a drawer.</p></div><div class="pillar pillar--p"><span class="pn">MESSAGE 03</span><span class="emo">🩺</span><h4>Experts stand next to us.</h4><p>Doctors and educators put their names to this. Credible, never clinical.</p></div><div class="pillar pillar--y"><span class="pn">MESSAGE 04</span><span class="emo">📣</span><h4>Say it out loud.</h4><p>Break the taboo by being unembarrassed. Warm and funny beats shock value.</p></div></div>
-    
-    <div class="draftnote reveal"><b>Draft copy</b> &mdash; written from the brand voice already on this site.
-      Swap for the approved wording before this goes to creators.</div>
+
+    <div class="reveal-band reveal">
+      <div class="rb-txt">
+        <span class="rb-lab">The format</span>
+        <p class="rb-line serif">Play it as the fruit. <em>Then reveal what it is.</em></p>
+        <p class="rb-sub">That turn is the whole joke — and the reason people send it to a friend.</p>
+        <div class="chips">
+          <span>A lemon in the fruit bowl</span>
+          <span>A berry by the pool</span>
+          <span>A prop on the nightstand</span>
+        </div>
+      </div>
+      <img class="rb-img" src="assets/products/lem.jpg" alt="Lem, the lemon-shaped massager" loading="lazy" decoding="async">
+    </div>
+
+    <div class="pillars-head reveal">
+      <h3 class="serif">Four formats. <em>Every shot feeds one.</em></h3>
+      <p>Four villa days, one content library. Everyone off duty, and on camera by consent.</p>
+    </div>
+    <div class="pillargrid">
+      <div class="pillar pillar--p reveal">
+        <div class="pn">P01</div><div class="emo" aria-hidden="true">🎥</div>
+        <h4 class="serif">Vlog-style highlights</h4>
+        <p>The trip as it happens.</p>
+        <div class="eg"><span class="lab">For example</span>A same-night recap: wake up, pool, workshop, dinner — ending in matching pyjamas.</div>
+        <div class="chips chips--on"><span>Arrivals</span><span>Dinners</span><span>The workshop</span><span>The boat</span></div>
+      </div>
+      <div class="pillar pillar--y reveal">
+        <div class="pn">P02</div><div class="emo" aria-hidden="true">😂</div>
+        <h4 class="serif">Skits + memes</h4>
+        <p>Group-chat humour. Nothing anyone hasn't opted into.</p>
+        <div class="eg"><span class="lab">For example</span>Unboxing the welcome box, pulling out a lemon, straight face. “It’s a lemon.”</div>
+        <div class="chips chips--dk"><span>Unboxing fails</span><span>"Who packed this"</span><span>Boat-day chaos</span></div>
+      </div>
+      <div class="pillar pillar--p reveal">
+        <div class="pn">P03</div><div class="emo" aria-hidden="true">🌴</div>
+        <h4 class="serif">Video vignettes</h4>
+        <p>Mood, atmosphere, product POV through the villa.</p>
+        <div class="eg"><span class="lab">For example</span>Slow pan across the dinner table — candles, fruit bowl, Lem sitting in it like it belongs.</div>
+        <div class="chips chips--on"><span>Water &amp; light</span><span>Fruit-bowl cameos</span><span>Candlelight</span></div>
+      </div>
+      <div class="pillar pillar--y reveal">
+        <div class="pn">P04</div><div class="emo" aria-hidden="true">🎤</div>
+        <h4 class="serif">Mini mic series</h4>
+        <p>Pick Your Flavour deck in hand.</p>
+        <div class="eg"><span class="lab">For example</span>Hand someone the mic, draw a card: “Hot or cold?” Their face is the whole clip.</div>
+        <div class="chips chips--dk"><span>Vertical</span><span>One question per clip</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1027,6 +1118,28 @@
       
     </div>
 
+  </div>
+</section>
+
+<section class="panel" id="panelists">
+  <div class="wrap">
+    <span class="kicker eyebrow">Day two · brunch</span>
+    <h2 class="big serif">Nancy's <em>panelists.</em></h2>
+    <p class="panel-sub reveal">Joining us for the sharing session over brunch on Thursday — a 30-minute talk, ten minutes of Q&amp;A, and a live product demo. Ask them anything.</p>
+    <div class="panel-grid">
+      <a class="person reveal" href="https://www.instagram.com/drjilasenemar" target="_blank" rel="noopener">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/dr-jila.jpg" alt="Dr Jila Senemar" onerror="this.parentNode.classList.add('ph--tbd');this.parentNode.innerHTML='<span class=\'initials serif\'>DJ</span>'"></div>
+        <div class="nm serif">Dr Jila</div>
+        <div class="rl">Board-certified OB-GYN, FACOG · Founder of JilaMD &amp; the Miami Menopause Collective</div>
+        <div class="hd">@drjilasenemar</div>
+      </a>
+      <a class="person reveal" href="https://www.instagram.com/luvbites.co" target="_blank" rel="noopener">
+        <div class="ph"><img loading="lazy" decoding="async" src="assets/brand/dr-tara.jpg" alt="Dr Tara Suwinyattichaiporn" onerror="this.remove()"></div>
+        <div class="nm serif">Dr Tara</div>
+        <div class="rl">Sex &amp; relationship expert · @luvbites.co founder</div>
+        <div class="hd">@luvbites.co</div>
+      </a>
+    </div>
   </div>
 </section>
 
